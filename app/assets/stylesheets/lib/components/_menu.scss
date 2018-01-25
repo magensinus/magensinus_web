@@ -1,0 +1,58 @@
+// Menu
+
+$class: "menu";
+
+.#{$class} {
+  float: right;
+  .#{$class}-box {
+    @include clear-list;
+    float: left;
+    .#{$class}-item {
+      float: left;
+      padding: 8px;
+      .link {
+        font-weight: 700;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+// Media Queries
+
+@media #{$tiny} {
+  .#{$class} {
+    .#{$class}-box {
+      .#{$class}-item {
+      }
+    }
+  }
+}
+
+@media #{$small} {
+  .#{$class} {
+    .#{$class}-box {
+      .#{$class}-item {
+      }
+    }
+  }
+}
+
+@media #{$medium} {
+  .#{$class} {
+    .#{$class}-box {
+      .#{$class}-item {
+      }
+    }
+  }
+}
+
+@media #{$large} {
+  .#{$class} {
+    .#{$class}-box {
+      .#{$class}-item {
+      }
+    }
+  }
+}

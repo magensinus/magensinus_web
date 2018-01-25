@@ -1,0 +1,51 @@
+// Template
+
+$class: "template";
+
+.#{$class} {
+  float: left;
+  .#{$class}-box {
+    float: left;
+    .#{$class}-item {
+      float: left;
+    }
+  }
+}
+
+// Media Queries
+
+@media #{$tiny} {
+  .#{$class} {
+    .#{$class}-box {
+      .#{$class}-item {
+      }
+    }
+  }
+}
+
+@media #{$small} {
+  .#{$class} {
+    .#{$class}-box {
+      .#{$class}-item {
+      }
+    }
+  }
+}
+
+@media #{$medium} {
+  .#{$class} {
+    .#{$class}-box {
+      .#{$class}-item {
+      }
+    }
+  }
+}
+
+@media #{$large} {
+  .#{$class} {
+    .#{$class}-box {
+      .#{$class}-item {
+      }
+    }
+  }
+}

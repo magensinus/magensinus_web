@@ -1,0 +1,24 @@
+// Center
+
+@mixin center-parent {
+  right: -50%;
+  float: left;
+  position: relative;
+}
+
+@mixin center-child {
+  right: 50%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+}
+
+//  Classes
+
+.center-parent {
+  @include center-parent;
+}
+
+.center-child {
+  @include center-child;
+}

@@ -1,0 +1,11 @@
+// Border box
+
+@mixin border-box {
+  box-sizing: border-box;
+}
+
+//  Classes
+
+.border-box {
+  @include border-box;
+}

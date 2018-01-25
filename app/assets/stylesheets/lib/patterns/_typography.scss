@@ -1,0 +1,163 @@
+// Typography
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+h1 {
+  font-size: 32px;
+  line-height: 40px;
+  .small {
+    font-size: 24px;
+  }
+}
+
+h2 {
+  font-size: 28px;
+  line-height: 36px;
+  .small {
+    font-size: 20px;
+  }
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 32px;
+  .small {
+    font-size: 16px;
+  }
+}
+
+h4 {
+  font-size: 20px;
+  line-height: 28px;
+  .small {
+    font-size: 12px;
+  }
+}
+
+h5 {
+  font-size: 14px;
+  line-height: 22px;
+  text-transform: uppercase;
+  .small {
+    font-size: 10px;
+  }
+}
+
+h6 {
+  font-size: 14px;
+  font-style: italic;
+  line-height: 22px;
+  .small {
+    font-size: 10px;
+  }
+}
+
+p,
+.text {
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  .code {
+    font-size: 14px;
+  }
+  .small {
+    font-size: 14px;
+  }
+  &.nano {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  &.tiny {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  &.small {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  &.medium {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  &.large {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+  }
+}
+
+blockquote {
+  background-color: #eee;
+  font-size: 18px;
+  line-height: 24px;
+  margin: 32px;
+  padding: 16px;
+  width: auto;
+  footer {
+    font-size: 14px;
+    font-style: italic;
+    line-height: 20px;
+    text-align: left;
+    width: 100%;
+  }
+}
+
+ol,
+ul {
+  list-style-position: inside;
+  margin: 32px;
+  padding: 0;
+  width: auto;
+  li {
+    font-size: 18px;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.abbr,
+.bold,
+.code,
+.italic,
+.mark,
+.small,
+.strikethrough {
+  display: inline-block;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+.abbr {
+  cursor: help;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.mark {
+  background-color: yellow;
+}
+
+.strikethrough {
+  text-decoration: line-through;
+}

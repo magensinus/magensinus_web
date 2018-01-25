@@ -1,0 +1,29 @@
+// Column 480
+
+$width: 480px;
+$class: "col-480";
+
+@import "lib/columns/col_math";
+@import "lib/columns/col_setup";
+
+// Media Queries
+
+@media #{$tiny} {
+  $width: 240px;
+  @import "lib/columns/col_math";
+}
+
+@media #{$small} {
+  $width: 480px;
+  @import "lib/columns/col_math";
+}
+
+@media #{$medium} {
+  $width: 480px;
+  @import "lib/columns/col_math";
+}
+
+@media all and #{$large} {
+  $width: 480px;
+  @import "lib/columns/col_math";
+}

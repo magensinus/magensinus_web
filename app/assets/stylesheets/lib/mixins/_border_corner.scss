@@ -1,0 +1,19 @@
+// Border corner
+
+@mixin border-corner($radius) {
+  border-radius: $radius;
+}
+
+@mixin border-top-corner($radius) {
+  border-radius: $radius;
+}
+
+//  Classes
+
+.border-corner {
+  @include border-corner(0);
+}
+
+.border-top-corner {
+  @include border-top-corner(0);
+}

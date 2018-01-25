@@ -1,0 +1,44 @@
+// Link
+
+.link {
+  @include hover-animation(.20s);
+  display: inline-block;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  &.nano {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  &.tiny {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  &.small {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  &.medium {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  &.large {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+  }
+  &.blue {
+    &:link, &:visited {
+      color: $blue_00;
+      .icon * {
+        fill: $blue_00;
+      }
+    }
+    &:hover, &:active {
+      color: $white;
+      .icon * {
+        fill: $white;
+      }
+    }
+  }
+}

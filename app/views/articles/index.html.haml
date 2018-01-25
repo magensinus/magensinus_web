@@ -1,0 +1,12 @@
+// Index
+
+.panel-one
+  .main
+    .main-box
+      - @journal_articles.each do |item|
+        .main-item
+          %h1= item.title
+        .main-item
+          %p.medium= item.description
+        .main-item
+          = link_to "#{t("read_more")}", article_path(item), class: "button tiny blue"

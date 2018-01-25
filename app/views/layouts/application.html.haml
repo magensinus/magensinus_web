@@ -1,0 +1,34 @@
+!!!
+%html
+  %head
+    %meta{content: "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title Magensinus
+    = csrf_meta_tags
+    = stylesheet_link_tag "application", media: "all", "data-turbolinks-track": "reload"
+    = javascript_include_tag "application", "data-turbolinks-track": "reload"
+  %body
+    .universal#header
+      .universal-box
+        .universal-item
+          = render "lib/components/brand"
+          = render "lib/components/menu"
+    .universal#container-top
+      .universal-box
+        .universal-item
+          = yield :breadcrumbs
+    .universal#container
+      .universal-box
+        .universal-item
+          = yield
+    .universal#container-bottom
+      .universal-box
+        .universal-item
+    .universal#footer
+      .universal-box
+        .universal-item
+          = render "lib/components/sponsors"
+          = render "lib/components/social"
+        .universal-item
+          = render "lib/components/sitemap"
+        .universal-item
+          = render "lib/components/copyright"

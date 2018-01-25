@@ -1,0 +1,13 @@
+// Clear list
+
+@mixin clear-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+//  Classes
+
+.clear-list {
+  @include clear-list;
+}

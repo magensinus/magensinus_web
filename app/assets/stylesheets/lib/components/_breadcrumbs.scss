@@ -1,0 +1,55 @@
+// Breadcrumbs
+
+$class: "breadcrumbs";
+
+.#{$class} {
+  float: left;
+  width: 100%;
+  .#{$class}-box {
+    @include clear-list;
+    float: left;
+    padding: 4px;
+    .#{$class}-item {
+      float: left;
+      padding: 4px;
+    }
+  }
+}
+
+// Media Queries
+
+@media #{$tiny} {
+  .#{$class} {
+    .#{$class}-box {
+      .#{$class}-item {
+      }
+    }
+  }
+}
+
+@media #{$small} {
+  .#{$class} {
+    .#{$class}-box {
+      .#{$class}-item {
+      }
+    }
+  }
+}
+
+@media #{$medium} {
+  .#{$class} {
+    .#{$class}-box {
+      .#{$class}-item {
+      }
+    }
+  }
+}
+
+@media #{$large} {
+  .#{$class} {
+    .#{$class}-box {
+      .#{$class}-item {
+      }
+    }
+  }
+}

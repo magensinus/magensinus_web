@@ -1,0 +1,10 @@
+pt:
+  primary_urls:
+    home: "Home"
+    about: "Quem Somos"
+    quality: "Qualidade"
+    courses: "Cursos"
+    articles: "Notícias"
+    contact: "Contacto"
+    newsletter: "Newsletter"
+  read_more: "Ler Mais"

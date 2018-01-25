@@ -1,0 +1,19 @@
+.panel-one
+  .main
+    .main-box
+      .main-item
+        %h1= @newsletter.title
+      .main-item
+        - if flash[:success]
+          %p.medium= @newsletter.success
+        - if flash[:failure]
+          %p.medium= @newsletter.failure
+        - else
+          %p.medium= @newsletter.description
+  .main
+    = form_with model: @subscription, url: newsletter_index_path do |form|
+      %fieldset.main-box
+        .main-item.col-960-6-5
+          = form.text_field :email, placeholder: "O seu email..."
+        .main-item.col-960-6
+          = form.submit "Subscrever", class: "button small green"

@@ -1,0 +1,11 @@
+// Hover animation
+
+@mixin hover-animation($time) {
+  transition: background-color $time ease, color $time ease, fill $time ease;
+}
+
+//  Classes
+
+.hover-animation {
+  @include hover-animation(.25s);
+}

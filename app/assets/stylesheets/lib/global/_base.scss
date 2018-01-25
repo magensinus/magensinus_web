@@ -1,0 +1,37 @@
+// Base
+
+* {
+  @include border-box;
+  @include clearfix;
+}
+
+html,
+body {
+  @include border-box;
+  @include clearfix;
+  font-family: $sans;
+  font-size: 18px;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+a {
+  color: black;
+  &:link,
+  &:visited {
+    color: black;
+  }
+  &:hover,
+  &:active {
+    color: #777;
+  }
+}
+
+img {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+}

@@ -1,0 +1,280 @@
+// Palette
+
+$tap:   rgba(0, 0, 0, 0);
+$black: rgba(0, 0, 0, 1);
+$white: rgba(255, 255, 255, 1);
+
+// Gray
+$gray-03: #eff1f2;
+$gray-02: #d4d7da;
+$gray-01: #abb1b7;
+$gray-00: #828b94;
+$gray-10: #5d656d;
+$gray-20: #3a3f44;
+$gray-30: #17191b;
+
+// Gray backgrounds
+.gray-03-bg {
+  background-color: $gray-03;
+}
+.gray-02-bg {
+  background-color: $gray-02;
+}
+.gray-01-bg {
+  background-color: $gray-01;
+}
+.gray-00-bg {
+  background-color: $gray-00;
+}
+.gray-10-bg {
+  background-color: $gray-10;
+}
+.gray-20-bg {
+  background-color: $gray-20;
+}
+.gray-30-bg {
+  background-color: $gray-30;
+}
+
+// Gray fonts
+.gray-03-ft {
+  color: $gray-03;
+}
+.gray-02-ft {
+  color: $gray-02;
+}
+.gray-01-ft {
+  color: $gray-01;
+}
+.gray-00-ft {
+  color: $gray-00;
+}
+.gray-10-ft {
+  color: $gray-10;
+}
+.gray-20-ft {
+  color: $gray-20;
+}
+.gray-30-ft {
+  color: $gray-30;
+}
+
+// Blue
+$blue-03: #e6f2ff;
+$blue-02: #b3d8ff;
+$blue-01: #66b1ff;
+$blue-00: #198aff;
+$blue-10: #0064cb;
+$blue-20: #003e7e;
+$blue-30: #001832;
+
+// Blue backgrounds
+.blue-03-bg {
+  background-color: $blue-03;
+}
+.blue-02-bg {
+  background-color: $blue-02;
+}
+.blue-01-bg {
+  background-color: $blue-01;
+}
+.blue-00-bg {
+  background-color: $blue-00;
+}
+.blue-10-bg {
+  background-color: $blue-10;
+}
+.blue-20-bg {
+  background-color: $blue-20;
+}
+.blue-30-bg {
+  background-color: $blue-30;
+}
+
+// Blue fonts
+.blue-03-ft {
+  color: $blue-03;
+}
+.blue-02-ft {
+  color: $blue-02;
+}
+.blue-01-ft {
+  color: $blue-01;
+}
+.blue-00-ft {
+  color: $blue-00;
+}
+.blue-10-ft {
+  color: $blue-10;
+}
+.blue-20-ft {
+  color: $blue-20;
+}
+.blue-30-ft {
+  color: $blue-30;
+}
+
+// Green
+$green-03: #f5faf0;
+$green-02: #cde8b6;
+$green-01: #a5d57c;
+$green-00: #7dc242;
+$green-10: #588b2d;
+$green-20: #33511a;
+$green-30: #0f1707;
+
+// Green backgrounds
+.green-03-bg {
+  background-color: $green-03;
+}
+.green-02-bg {
+  background-color: $green-02;
+}
+.green-01-bg {
+  background-color: $green-01;
+}
+.green-00-bg {
+  background-color: $green-00;
+}
+.green-10-bg {
+  background-color: $green-10;
+}
+.green-20-bg {
+  background-color: $green-20;
+}
+.green-30-bg {
+  background-color: $green-30;
+}
+
+// Green fonts
+.green-03-ft {
+  color: $green-03;
+}
+.green-02-ft {
+  color: $green-02;
+}
+.green-01-ft {
+  color: $green-01;
+}
+.green-00-ft {
+  color: $green-00;
+}
+.green-10-ft {
+  color: $green-10;
+}
+.green-20-ft {
+  color: $green-20;
+}
+.green-30-ft {
+  color: $green-30;
+}
+
+// Yellow
+$yellow-03: #ffffe1;
+$yellow-02: #ffffa6;
+$yellow-01: #feff6b;
+$yellow-00: #feff30;
+$yellow-10: #f3f400;
+$yellow-20: #b8b900;
+$yellow-30: #7e7e00;
+
+// Yellow backgrounds
+.yellow-03-bg {
+  background-color: $yellow-03;
+}
+.yellow-02-bg {
+  background-color: $yellow-02;
+}
+.yellow-01-bg {
+  background-color: $yellow-01;
+}
+.yellow-00-bg {
+  background-color: $yellow-00;
+}
+.yellow-10-bg {
+  background-color: $yellow-10;
+}
+.yellow-20-bg {
+  background-color: $yellow-20;
+}
+.yellow-30-bg {
+  background-color: $yellow-30;
+}
+
+// Yellow fonts
+.yellow-03-ft {
+  color: $yellow-03;
+}
+.yellow-02-ft {
+  color: $yellow-02;
+}
+.yellow-01-ft {
+  color: $yellow-01;
+}
+.yellow-00-ft {
+  color: $yellow-00;
+}
+.yellow-10-ft {
+  color: $yellow-10;
+}
+.yellow-20-ft {
+  color: $yellow-20;
+}
+.yellow-30-ft {
+  color: $yellow-30;
+}
+
+// Red
+$red-03: #ffffe1;
+$red-02: #ffffa6;
+$red-01: #feff6b;
+$red-00: #feff30;
+$red-10: #f3f400;
+$red-20: #b8b900;
+$red-30: #7e7e00;
+
+// Red backgrounds
+.red-03-bg {
+  background-color: $red-03;
+}
+.red-02-bg {
+  background-color: $red-02;
+}
+.red-01-bg {
+  background-color: $red-01;
+}
+.red-00-bg {
+  background-color: $red-00;
+}
+.red-10-bg {
+  background-color: $red-10;
+}
+.red-20-bg {
+  background-color: $red-20;
+}
+.red-30-bg {
+  background-color: $red-30;
+}
+
+// Red fonts
+.red-03-ft {
+  color: $red-03;
+}
+.red-02-ft {
+  color: $red-02;
+}
+.red-01-ft {
+  color: $red-01;
+}
+.red-00-ft {
+  color: $red-00;
+}
+.red-10-ft {
+  color: $red-10;
+}
+.red-20-ft {
+  color: $red-20;
+}
+.red-30-ft {
+  color: $red-30;
+}

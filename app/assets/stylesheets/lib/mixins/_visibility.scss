@@ -1,0 +1,21 @@
+// Visibility
+
+@mixin hide-block-element {
+  display: none;
+  visibility: hidden;
+}
+
+@mixin show-block-element {
+  display: block;
+  visibility: visible;
+}
+
+//  Classes
+
+.hide-block-element {
+  @include hide-block-element;
+}
+
+.show-block-element {
+  @include show-block-element;
+}

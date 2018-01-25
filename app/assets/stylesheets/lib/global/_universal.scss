@@ -1,0 +1,79 @@
+// Universal
+
+$class: "universal";
+
+.#{$class} {
+  @include border-box;
+  @include clearfix;
+  float: left;
+  margin: 0 auto;
+  min-width: 960px;
+  padding: 0;
+  width: 100%;
+  .#{$class}-box {
+    @include border-box;
+    @include clearfix;
+    margin: 0 auto;
+    width: 960px;
+    padding: 0;
+    .#{$class}-item {
+      @include border-box;
+      @include clearfix;
+      float: left;
+      margin: 0 auto;
+      padding: 0;
+      overflow: hidden;
+      width: 100%;
+    }
+  }
+}
+
+// Media Queries
+
+@media #{$tiny} {
+  .#{$class} {
+    min-width: 240px;
+    .#{$class}-box {
+      width: 240px;
+      .#{$class}-item {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media #{$small} {
+  .#{$class} {
+    min-width: 480px;
+    .#{$class}-box {
+      width: 480px;
+      .#{$class}-item {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media #{$medium} {
+  .#{$class} {
+    min-width: 720px;
+    .#{$class}-box {
+      width: 720px;
+      .#{$class}-item {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media #{$large} {
+  .#{$class} {
+    min-width: 960px;
+    .#{$class}-box {
+      width: 960px;
+      .#{$class}-item {
+        width: 100%;
+      }
+    }
+  }
+}

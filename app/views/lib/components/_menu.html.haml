@@ -1,0 +1,5 @@
+%div.menu
+  %ul.menu-box
+    - fetch_primary_urls.each do |item|
+      %li{ class: "menu-item #{active_class(item[:url])}" }
+        = link_to item[:title], item[:url], class: "link sans nano"

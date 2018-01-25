@@ -1,0 +1,85 @@
+// Link
+
+.button {
+  @include border-corner(4px);
+  @include hover-animation(.20s);
+  appearance: none;
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0;
+  padding: 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  &.nano {
+    font-size: 12px;
+    line-height: 18px;
+    padding: 4px;
+  }
+  &.tiny {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 8px;
+  }
+  &.small {
+    font-size: 18px;
+    line-height: 24px;
+    padding: 16px;
+  }
+  &.medium {
+    font-size: 28px;
+    line-height: 36px;
+    padding: 24px;
+  }
+  &.large {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    padding: 32px;
+  }
+  &.blue {
+    background-color: $blue-00;
+    color: $white;
+    .icon * {
+      fill: $white;
+    }
+    &:link, &:visited {
+      background-color: $blue-00;
+      color: $white;
+      .icon * {
+        fill: $white;
+      }
+    }
+    &:hover, &:active {
+      background-color: $blue-01;
+      color: $white;
+      .icon * {
+        fill: $white;
+      }
+    }
+  }
+  &.green {
+    background-color: $green-00;
+    color: $white;
+    .icon * {
+      fill: $white;
+    }
+    &:link, &:visited {
+      background-color: $green-00;
+      color: $white;
+      .icon * {
+        fill: $white;
+      }
+    }
+    &:hover, &:active {
+      background-color: $green-01;
+      color: $white;
+      .icon * {
+        fill: $white;
+      }
+    }
+  }
+}
