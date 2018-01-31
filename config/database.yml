@@ -31,7 +31,7 @@ development:
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
   # the same name as the operating system user that initialized the database.
-  #username: magensinus_web
+  #username: magensinus_cloud
 
   # The password associated with the postgres role (username).
   #password:
@@ -82,6 +82,6 @@ test:
 #
 production:
   <<: *default
-  database: magensinus_web_production
-  username: magensinus_web
-  password: <%= ENV['MAGENSINUS_WEB_DATABASE_PASSWORD'] %>
+  database: magensinus_cloud_production
+  username: magensinus_cloud
+  password: <%= ENV['MAGENSINUS_CLOUD_DATABASE_PASSWORD'] %>
