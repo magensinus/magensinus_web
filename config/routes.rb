@@ -9,4 +9,7 @@ Rails.application.routes.draw do
   resources :articles, only: [:index, :show], controller: :articles
   resources :contact, only: [:index], controller: :contact
   resources :newsletter, only: [:index, :show, :new, :create], controller: :newsletter
+
+  # Style
+  resource :style, only: [:show], controller: :style
 end

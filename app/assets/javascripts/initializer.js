@@ -2,7 +2,7 @@
 
 bindEvents = function() {
   $(".panel-one").setPanel({
-    trim: 138
+    trim: 206
   });
   $(".panel-two").setPanel({
     trim: 138

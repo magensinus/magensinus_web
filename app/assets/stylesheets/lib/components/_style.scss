@@ -1,17 +1,20 @@
-// Copyright
+// Template
 
-$class: "copyright";
+$class: "style";
 
 .#{$class} {
   float: left;
+  width: 100%;
   .#{$class}-box {
     float: left;
-    padding: 4px;
+    width: 100%;
     .#{$class}-item {
       float: left;
-      padding: 4px;
-      p {
-        color: $blue-darkest;
+      width: 100%;
+      .#{$class}-chip {
+        float: left;
+        height: 48px;
+        width: 100%;
       }
     }
   }

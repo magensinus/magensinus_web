@@ -10,10 +10,38 @@ $class: "menu";
     .#{$class}-item {
       float: left;
       padding: 8px;
+      &.active {
+        .link {
+          &:link, &:visited {
+            color: $green;
+            .icon * {
+              fill: $green;
+            }
+          }
+          &:hover, &:active {
+            color: $green;
+            .icon * {
+              fill: $green;
+            }
+          }
+        }
+      }
       .link {
         font-weight: 700;
         text-decoration: none;
         text-transform: uppercase;
+        &:link, &:visited {
+          color: $blue;
+          .icon * {
+            fill: $blue;
+          }
+        }
+        &:hover, &:active {
+          color: $green;
+          .icon * {
+            fill: $green;
+          }
+        }
       }
     }
   }

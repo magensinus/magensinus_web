@@ -29,9 +29,9 @@
   }
   &.blue {
     &:link, &:visited {
-      color: $blue_00;
+      color: $blue;
       .icon * {
-        fill: $blue_00;
+        fill: $blue;
       }
     }
     &:hover, &:active {

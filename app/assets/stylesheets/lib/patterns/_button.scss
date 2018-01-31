@@ -41,20 +41,20 @@
     padding: 32px;
   }
   &.blue {
-    background-color: $blue-00;
+    background-color: $blue;
     color: $white;
     .icon * {
       fill: $white;
     }
     &:link, &:visited {
-      background-color: $blue-00;
+      background-color: $blue;
       color: $white;
       .icon * {
         fill: $white;
       }
     }
     &:hover, &:active {
-      background-color: $blue-01;
+      background-color: $blue-light;
       color: $white;
       .icon * {
         fill: $white;
@@ -62,20 +62,20 @@
     }
   }
   &.green {
-    background-color: $green-00;
+    background-color: $green;
     color: $white;
     .icon * {
       fill: $white;
     }
     &:link, &:visited {
-      background-color: $green-00;
+      background-color: $green;
       color: $white;
       .icon * {
         fill: $white;
       }
     }
     &:hover, &:active {
-      background-color: $green-01;
+      background-color: $green-light;
       color: $white;
       .icon * {
         fill: $white;
