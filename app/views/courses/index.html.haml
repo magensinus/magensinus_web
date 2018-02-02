@@ -1,7 +1,14 @@
+// Index
+
 .panel-one
-  .main
-    .main-box
-      .main-item
-        %h1= @courses.title
-      .main-item
-        %p.medium= @courses.description
+  .main.col-960-1
+    .main-box.col-960-1
+      .main-item.col-960-1
+        %h1.white-ft= @courses.title
+      .main-item.col-960-1
+        %p.medium.white-ft= @courses.description
+    %hr.separator.medium
+    .main-box.col-960-1
+      - @academy_courses.each do |item|
+        .main-item.col-960-2
+          = link_to item.title, course_path(item), class: "link medium green"

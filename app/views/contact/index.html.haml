@@ -1,7 +1,30 @@
+// Index
+
 .panel-one
-  .main
-    .main-box
-      .main-item
-        %h1= @contact.title
-      .main-item
-        %p.medium= @contact.description
+  .main.col-960-2
+    .main-box.col-960-2
+      .main-item.col-960-2
+        %h1.white-ft #{@contact.title}
+      .main-item.col-960-2
+        %p.medium.white-ft #{@contact.description}
+    .main-box.col-960-2
+      .main-item.col-960-2
+        - if @contact.address_one.presence
+          %p.small.green-ft #{@contact.address_one}
+        - if @contact.address_two.presence
+          %p.small.green-ft #{@contact.address_two}
+        - if @contact.postcode.presence && @contact.city.presence
+          %p.small.green-ft #{@contact.postcode} #{@contact.city}
+        - if @contact.country.presence
+          %p.small.green-ft #{@contact.country}
+      .main-item.col-960-2
+        - if @contact.phone.presence
+          %p.small.green-ft #{t("contact.phone")}: #{@contact.phone}
+        - if @contact.fax.presence
+          %p.small.green-ft #{t("contact.fax")}: #{@contact.fax}
+        - if @contact.email.presence
+          %p.small.green-ft #{t("contact.email")}: #{@contact.email}
+  .main.col-960-2
+    .main-box.col-960-2
+      .main-item.col-960-2
+        #map

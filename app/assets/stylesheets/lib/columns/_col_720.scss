@@ -3,8 +3,8 @@
 $width: 720px;
 $class: "col-720";
 
-@import "lib/columns/col_math";
 @import "lib/columns/col_setup";
+@import "lib/columns/col_math";
 
 // Media Queries
 
@@ -23,7 +23,7 @@ $class: "col-720";
   @import "lib/columns/col_math";
 }
 
-@media all and #{$large} {
+@media #{$large} {
   $width: 720px;
   @import "lib/columns/col_math";
 }

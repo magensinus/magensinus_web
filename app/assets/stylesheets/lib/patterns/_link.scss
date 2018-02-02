@@ -6,6 +6,9 @@
   font-size: 18px;
   margin: 0;
   padding: 0;
+  &.no-underline {
+    text-decoration: none;
+  }
   &.nano {
     font-size: 12px;
     line-height: 18px;
@@ -32,6 +35,20 @@
       color: $blue;
       .icon * {
         fill: $blue;
+      }
+    }
+    &:hover, &:active {
+      color: $white;
+      .icon * {
+        fill: $white;
+      }
+    }
+  }
+  &.green {
+    &:link, &:visited {
+      color: $green;
+      .icon * {
+        fill: $green;
       }
     }
     &:hover, &:active {

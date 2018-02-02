@@ -4,6 +4,16 @@ $tap:   rgba(0, 0, 0, 0);
 $black: rgba(0, 0, 0, 1);
 $white: rgba(255, 255, 255, 1);
 
+// White backgrounds
+.white-bg {
+  background-color: $white;
+}
+
+// White fonts
+.white-ft {
+  color: $white;
+}
+
 // Gray
 $gray-lightest: #babec3;
 $gray-lighter:  #9ea5ac;
@@ -225,56 +235,56 @@ $yellow-30: #7e7e00;
 }
 
 // Red
-$red-03: #ffffe1;
-$red-02: #ffffa6;
-$red-01: #feff6b;
-$red-00: #feff30;
-$red-10: #f3f400;
-$red-20: #b8b900;
-$red-30: #7e7e00;
+$red-lightest:  #ffffe1;
+$red-lighter:   #ffffa6;
+$red-light:     #feff6b;
+$red:           #feff30;
+$red-dark:      #f3f400;
+$red-darker:    #b8b900;
+$red-darkest:   #7e7e00;
 
 // Red backgrounds
-.red-03-bg {
-  background-color: $red-03;
+.red-lightest-bg {
+  background-color: $red-lightest;
 }
-.red-02-bg {
-  background-color: $red-02;
+.red-lighter-bg {
+  background-color: $red-lighter;
 }
-.red-01-bg {
-  background-color: $red-01;
+.red-light-bg {
+  background-color: $red-light;
 }
-.red-00-bg {
-  background-color: $red-00;
+.red-bg {
+  background-color: $red;
 }
-.red-10-bg {
-  background-color: $red-10;
+.red-dark-bg {
+  background-color: $red-dark;
 }
-.red-20-bg {
-  background-color: $red-20;
+.red-darker-bg {
+  background-color: $red-darker;
 }
-.red-30-bg {
-  background-color: $red-30;
+.red-darkest-bg {
+  background-color: $red-darkest;
 }
 
 // Red fonts
-.red-03-ft {
-  color: $red-03;
+.red-lightest-ft {
+  color: $red-lightest;
 }
-.red-02-ft {
-  color: $red-02;
+.red-lighter-ft {
+  color: $red-lighter;
 }
-.red-01-ft {
-  color: $red-01;
+.red-light-ft {
+  color: $red-light;
 }
-.red-00-ft {
-  color: $red-00;
+.red-ft {
+  color: $red;
 }
-.red-10-ft {
-  color: $red-10;
+.red-dark-ft {
+  color: $red-dark;
 }
-.red-20-ft {
-  color: $red-20;
+.red-darker-ft {
+  color: $red-darker;
 }
-.red-30-ft {
-  color: $red-30;
+.red-darkest-ft {
+  color: $red-darkest;
 }

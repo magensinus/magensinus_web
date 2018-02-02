@@ -10,12 +10,43 @@ $class: "col-960";
 
 @media #{$tiny} {
   $width: 240px;
-  @import "lib/columns/col_math";
+  .#{$class}-1    { width: (($width / 1) * 1); }
+  .#{$class}-2    { width: (($width / 1) * 1); }
+  .#{$class}-3    { width: (($width / 1) * 1); }
+  .#{$class}-3-2  { width: (($width / 1) * 1); }
+  .#{$class}-4    { width: (($width / 1) * 1); }
+  .#{$class}-4-2  { width: (($width / 1) * 1); }
+  .#{$class}-4-3  { width: (($width / 1) * 1); }
+  .#{$class}-5    { width: (($width / 1) * 1); }
+  .#{$class}-5-2  { width: (($width / 1) * 1); }
+  .#{$class}-5-3  { width: (($width / 1) * 1); }
+  .#{$class}-5-4  { width: (($width / 1) * 1); }
+  .#{$class}-6    { width: (($width / 1) * 1); }
+  .#{$class}-6-2  { width: (($width / 1) * 1); }
+  .#{$class}-6-3  { width: (($width / 1) * 1); }
+  .#{$class}-6-4  { width: (($width / 1) * 1); }
+  .#{$class}-6-5  { width: (($width / 1) * 1); }
+
 }
 
 @media #{$small} {
   $width: 480px;
-  @import "lib/columns/col_math";
+  .#{$class}-1    { width: (($width / 1) * 1); }
+  .#{$class}-2    { width: (($width / 1) * 1); }
+  .#{$class}-3    { width: (($width / 1) * 1); }
+  .#{$class}-3-2  { width: (($width / 1) * 1); }
+  .#{$class}-4    { width: (($width / 1) * 1); }
+  .#{$class}-4-2  { width: (($width / 1) * 1); }
+  .#{$class}-4-3  { width: (($width / 1) * 1); }
+  .#{$class}-5    { width: (($width / 1) * 1); }
+  .#{$class}-5-2  { width: (($width / 1) * 1); }
+  .#{$class}-5-3  { width: (($width / 1) * 1); }
+  .#{$class}-5-4  { width: (($width / 1) * 1); }
+  .#{$class}-6    { width: (($width / 1) * 1); }
+  .#{$class}-6-2  { width: (($width / 1) * 1); }
+  .#{$class}-6-3  { width: (($width / 1) * 1); }
+  .#{$class}-6-4  { width: (($width / 1) * 1); }
+  .#{$class}-6-5  { width: (($width / 1) * 1); }
 }
 
 @media #{$medium} {
@@ -23,7 +54,7 @@ $class: "col-960";
   @import "lib/columns/col_math";
 }
 
-@media all and #{$large} {
+@media #{$large} {
   $width: 960px;
   @import "lib/columns/col_math";
 }

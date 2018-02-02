@@ -1,12 +1,15 @@
 // Index
 
 .panel-one
-  .main
-    .main-box
+  .main.col-960-1
+    .main-box.col-960-1
       - @journal_articles.each do |item|
-        .main-item
-          %h1= item.title
-        .main-item
-          %p.medium= item.description
-        .main-item
-          = link_to "#{t("read_more")}", article_path(item), class: "button tiny blue"
+        - if item.title.presence
+          .main-item.col-960-1
+            %h1.white-ft= item.title
+        - if item.description.presence
+          .main-item.col-960-1
+            %p.medium.white-ft= item.description
+        - if item.presence
+          .main-item.col-960-1
+            = link_to "#{t("read_more")}", article_path(item), class: "button tiny green"

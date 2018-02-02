@@ -1,19 +1,19 @@
 .panel-one
-  .main
-    .main-box
-      .main-item
-        %h1= @newsletter.title
-      .main-item
+  .main.col-960-1
+    .main-box.col-960-1
+      .main-item.col-960-1
+        %h1.white-ft= @newsletter.title
+      .main-item.col-960-1
         - if flash[:success]
-          %p.medium= @newsletter.success
-        - if flash[:failure]
-          %p.medium= @newsletter.failure
+          %p.medium.green-ft= @newsletter.success
+        - elsif flash[:failure]
+          %p.medium.red-ft= @newsletter.failure
         - else
-          %p.medium= @newsletter.description
-  .main
-    = form_with model: @subscription, url: newsletter_index_path do |form|
-      %fieldset.main-box
-        .main-item.col-960-6-5
+          %p.medium.white-ft= @newsletter.description
+  .main.col-960-1
+    = form_with model: @subscription, url: newsletter_index_path, class: "col-960-1" do |form|
+      %fieldset.main-box.col-960-1
+        .main-item.col-960-6-4
           = form.text_field :email, placeholder: "O seu email..."
-        .main-item.col-960-6
+        .main-item.col-960-6-2
           = form.submit "Subscrever", class: "button small green"

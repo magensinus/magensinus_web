@@ -1,0 +1,15 @@
+// Show
+
+- content_for :breadcrumbs do
+  %div.breadcrumbs
+    %ul.breadcrumbs-box
+      %li.breadcrumbs-item
+        = link_to "Voltar", courses_path, class: "link mono tiny"
+
+.panel-one
+  .main.col-960-1
+    .main-box.col-960-1
+      .main-item.col-960-1
+        %h1.white-ft= @academy_course.title
+      .main-item.col-960-1
+        %p.medium.white-ft= @academy_course.description

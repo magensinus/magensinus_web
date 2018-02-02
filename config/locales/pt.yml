@@ -8,3 +8,8 @@ pt:
     contact: "Contacto"
     newsletter: "Newsletter"
   read_more: "Ler Mais"
+  contact:
+    fax: "Fax"
+    phone: "Tel"
+    email: "Email"
+    address_one: "Morada"
