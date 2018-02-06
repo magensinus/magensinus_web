@@ -43,6 +43,12 @@ gem "carrierwave", "~> 1.2"
 # Manipulate images with minimal use of memory via ImageMagick / GraphicsMagick
 gem "mini_magick", "~> 4.8"
 
+# Simple, Heroku-friendly Rails app configuration using ENV and a single YAML file
+gem "figaro", "~> 1.1"
+
+# The Ruby cloud services library
+gem "fog", "~> 1.42"
+
 group :development, :test do
   # Call "byebug" anywhere in the code to stop execution and get a debugger console
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]

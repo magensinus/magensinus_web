@@ -1,14 +1,17 @@
-// Main
+// Template
 
-$class: "main";
+$class: "misc";
 
 .#{$class} {
   float: left;
+  width: 100%;
   .#{$class}-box {
     float: left;
+    width: 100%;
     .#{$class}-item {
       float: left;
       padding: 8px;
+      width: 100%;
     }
   }
 }

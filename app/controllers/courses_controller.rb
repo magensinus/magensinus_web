@@ -4,7 +4,7 @@ class CoursesController < ApplicationController
   # /courses
   def index
     @courses = Courses.first!
-    @academy_courses = Academy::Course.where(magensinus: true).order(position: :asc).published
+    @academy_courses = Academy::Course.published
   end
 
   # /courses/tyyt56hhhj

@@ -1,14 +1,18 @@
-// Main
+// Menu aside
 
-$class: "main";
+$class: "menu-aside";
 
 .#{$class} {
   float: left;
+  width: 100%;
   .#{$class}-box {
+    @include clear-list;
     float: left;
+    width: 100%;
     .#{$class}-item {
       float: left;
       padding: 8px;
+      width: 100%;
     }
   }
 }

@@ -2,12 +2,14 @@
 
 .panel-one
   .main.col-960-1
-    .main-box.col-960-1
-      .main-item.col-960-1
-        %h1.white-ft= @courses.title
-      .main-item.col-960-1
-        %p.medium.white-ft= @courses.description
-    %hr.separator.medium
+    - if @courses.title.presence
+      .main-box.col-960-1
+        .main-item.col-960-1
+          %h1.white-ft= @courses.title
+        - if @courses.description.presence
+          .main-item.col-960-1
+            %p.medium.white-ft= @courses.description
+      %hr.separator.medium
     .main-box.col-960-1
       - @academy_courses.each do |item|
         .main-item.col-960-2

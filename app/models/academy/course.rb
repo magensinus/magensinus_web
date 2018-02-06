@@ -8,9 +8,12 @@ module Academy
     # Concerns
     include Slug
 
+    # Uploaders
+    # ---------
+    # Document
+    mount_uploader :document_box, Academy::DocumentUploader
+
     # Scoping
-    scope :draft, -> { where(draft: true) }
-    scope :scheduled, -> { where.not(draft: true).where("published_at > ?", Time.zone.now) }
-    scope :published, -> { where.not(draft: true).where("published_at <= ?", Time.zone.now) }
+    scope :published, -> { where(published: true, magensinus: true).where("published_at <= ?", Time.zone.now).order(position: :asc) }
   end
 end

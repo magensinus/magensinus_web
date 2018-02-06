@@ -14,6 +14,9 @@
   position: relative;
   text-align: center;
   text-decoration: none;
+  &.wide {
+    width: 100%;
+  }
   &.nano {
     font-size: 12px;
     line-height: 18px;

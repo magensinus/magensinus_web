@@ -9,7 +9,27 @@
 .panel-one
   .main.col-960-1
     .main-box.col-960-1
-      .main-item.col-960-1
-        %h1.white-ft= @academy_course.title
-      .main-item.col-960-1
-        %p.medium.white-ft= @academy_course.description
+      - if @academy_course.title.presence
+        .main-item.col-960-1
+          %h1.white-ft= @academy_course.title
+      - if @academy_course.description.presence
+        .main-item.col-960-1
+          %p.medium.white-ft= @academy_course.description
+      - if @academy_course.misc.presence
+        .main-item.col-960-4
+          .menu-aside
+            .menu-aside-box
+              .menu-aside-item
+                = link_to @academy_course.document_box.url.to_s, class: "button tiny green left wide", target: "_blank" do
+                  - if @academy_course.document_caption.presence
+                    = @academy_course.document_caption
+                  - else
+                    Descarregar PDF
+              .menu-aside-item
+                = link_to "Somewhere", "#", class: "button tiny green left wide"
+        .main-item.col-960-4-3
+          .misc
+            .misc-box
+              .misc-item
+                .trix
+                  = @academy_course.misc.html_safe

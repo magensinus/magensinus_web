@@ -17,3 +17,9 @@
 /yarn-error.log
 
 .byebug_history
+
+# IMPORTANT: Environment files that may contain sensitive data
+config/figaro
+config/figaro/*
+config/figaro/**/*
+config/application.yml

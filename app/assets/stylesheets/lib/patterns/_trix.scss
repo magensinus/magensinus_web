@@ -1,0 +1,43 @@
+.trix {
+  p,
+  div {
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  abbr,
+  strong,
+  code,
+  em,
+  mark,
+  small,
+  del {
+    display: inline-block;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+  }
+
+  abbr {
+    cursor: help;
+  }
+
+  strong {
+    font-weight: bold;
+  }
+
+  em {
+    font-style: italic;
+  }
+
+  mark {
+    background-color: yellow;
+  }
+
+  del {
+    text-decoration: line-through;
+  }
+}
