@@ -1,0 +1,7 @@
+// Breadcrumbs
+
+- content_for :breadcrumbs do
+  .breadcrumbs
+    %ul.breadcrumbs-box
+      %li.breadcrumbs-item
+        = link_to "Voltar", articles_path, class: "link mono tiny left"

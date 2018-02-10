@@ -11,6 +11,9 @@ $class: "social";
     .#{$class}-item {
       float: left;
       padding: 4px;
+      img {
+        height: 40px;
+      }
     }
   }
 }

@@ -1,6 +1,6 @@
-// Sponsors
+// Badges
 
-$class: "sponsors";
+$class: "badges";
 
 .#{$class} {
   float: left;
@@ -11,6 +11,9 @@ $class: "sponsors";
     .#{$class}-item {
       float: left;
       padding: 4px;
+      img {
+        height: 40px;
+      }
     }
   }
 }

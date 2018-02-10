@@ -6,7 +6,7 @@
     = csrf_meta_tags
     = stylesheet_link_tag "application", media: "all", "data-turbolinks-track": "reload"
     = javascript_include_tag "application", "data-turbolinks-track": "reload"
-  %body.blue-dark-bg
+  %body
     .universal#header
       .universal-box
         .universal-item
@@ -26,7 +26,7 @@
     .universal#footer
       .universal-box
         .universal-item
-          = render "lib/components/sponsors"
+          = render "lib/components/badges"
           = render "lib/components/social"
         .universal-item
           = render "lib/components/sitemap"

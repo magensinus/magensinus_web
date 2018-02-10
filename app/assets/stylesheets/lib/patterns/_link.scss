@@ -30,6 +30,18 @@
     font-weight: 700;
     line-height: 40px;
   }
+  &:link, &:visited {
+    color: $black;
+    .icon * {
+      fill: $black;
+    }
+  }
+  &:hover, &:active {
+    color: $gray;
+    .icon * {
+      fill: $gray;
+    }
+  }
   &.blue {
     &:link, &:visited {
       color: $blue;
@@ -55,6 +67,23 @@
       color: $white;
       .icon * {
         fill: $white;
+      }
+    }
+  }
+}
+
+.active {
+  .link {
+    &:link, &:visited {
+      color: $gray;
+      .icon * {
+        fill: $gray;
+      }
+    }
+    &:hover, &:active {
+      color: $gray;
+      .icon * {
+        fill: $gray;
       }
     }
   }

@@ -43,6 +43,25 @@
     line-height: 40px;
     padding: 32px;
   }
+  background-color: $gray;
+  color: $white;
+  .icon * {
+    fill: $white;
+  }
+  &:link, &:visited {
+    background-color: $gray;
+    color: $white;
+    .icon * {
+      fill: $white;
+    }
+  }
+  &:hover, &:active {
+    background-color: $gray-light;
+    color: $white;
+    .icon * {
+      fill: $white;
+    }
+  }
   &.blue {
     background-color: $blue;
     color: $white;

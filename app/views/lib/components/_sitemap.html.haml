@@ -1,7 +1,9 @@
+// Sitemap
+
 .center-parent
   .center-child
     %nav.sitemap
       %ul.sitemap-box
         - fetch_primary_urls.each do |item|
           %li{ class: "sitemap-item #{active_class(item[:url])}" }
-            = link_to item[:title], item[:url], class: "link mono tiny"
+            = link_to item[:title], item[:url], class: "link mono tiny left"

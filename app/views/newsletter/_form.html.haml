@@ -1,0 +1,10 @@
+// Form
+
+%hr.separator.large
+.main.col-960-1
+  = form_with model: object, url: newsletter_index_path, class: "col-960-1" do |form|
+    %fieldset.main-box.col-960-1
+      .main-item.col-960-6-4
+        = form.text_field :email, placeholder: "O seu email..."
+      .main-item.col-960-6-2
+        = form.submit "Subscrever", class: "button small left"

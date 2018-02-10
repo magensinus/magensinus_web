@@ -3,20 +3,11 @@
 .panel-one
   .main.col-960-1
     .main-box.col-960-1
-      .main-item.col-960-1
-        %h1.white-ft= @quality.title
-      .main-item.col-960-1
-        %p.medium.white-ft= @quality.description
-    %hr.separator.medium
-    .main-box.col-960-1
-      - @quality_categories.each do |item|
-        - if item.assets.presence
-          .main-item.col-960-1
-            %h3.blue-darkest-ft= item.title
-          - item.assets.each do |asset|
-            .main-item.col-960-2
-              = link_to asset.document_box_url.to_s, class: "link small green", target: "_blank" do
-                - if asset.document_caption.presence
-                  = asset.document_caption
-                - else
-                  Documento
+      - if @quality.title.presence
+        .main-item.col-960-1
+          %h1= @quality.title
+      - if @quality.description.presence
+        .main-item.col-960-1
+          %p.medium= @quality.description
+
+    = render "categories", objects: @quality_categories

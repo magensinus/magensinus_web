@@ -1,0 +1,8 @@
+// Courses
+
+- if objects.presence
+  %hr.separator.medium
+  .main-box.col-960-1
+    - objects.each do |object|
+      .main-item.col-960-2
+        = link_to object.title, course_path(object), class: "link medium"

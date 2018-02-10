@@ -11,36 +11,6 @@ $class: "sitemap";
     .#{$class}-item {
       float: left;
       padding: 4px;
-      &.active {
-        .link {
-          &:link, &:visited {
-            color: $blue;
-            .icon * {
-              fill: $blue;
-            }
-          }
-          &:hover, &:active {
-            color: $blue;
-            .icon * {
-              fill: $blue;
-            }
-          }
-        }
-      }
-      .link {
-        &:link, &:visited {
-          color: $blue-darkest;
-          .icon * {
-            fill: $blue-darkest;
-          }
-        }
-        &:hover, &:active {
-          color: $blue;
-          .icon * {
-            fill: $blue;
-          }
-        }
-      }
     }
   }
 }
