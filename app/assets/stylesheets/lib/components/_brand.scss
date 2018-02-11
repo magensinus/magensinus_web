@@ -10,6 +10,13 @@ $class: "brand";
     .#{$class}-item {
       float: left;
       padding: 8px;
+      .link {
+        float: left;
+        padding: 4px 0;
+        img {
+          float: left;
+        }
+      }
     }
   }
 }
