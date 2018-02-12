@@ -3,6 +3,6 @@
 class ContactController < ApplicationController
   # /contact
   def index
-    @contact = Contact.first!
+    @contact ||= Contact.first!
   end
 end

@@ -1,7 +1,8 @@
 // Badges
 
-%nav.badges
-  %ul.badges-box
-    - endorsement_badges.each do |item|
-      %li.badges-item
-        = link_to image_tag(item.thumb_box.url.to_s, class: "left"), root_path, class: "link left"
+- if fetch_badges.presence
+  %nav.badges
+    %ul.badges-box
+      - fetch_badges.each do |item|
+        %li.badges-item
+          = link_to image_tag(item.thumb_box.url.to_s), root_path, class: "link"

@@ -3,6 +3,6 @@
 class HomeController < ApplicationController
   # Root
   def index
-    @home = Home.first!
+    @home ||= Home.first!
   end
 end

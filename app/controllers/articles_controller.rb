@@ -3,8 +3,8 @@
 class ArticlesController < ApplicationController
   # /articles
   def index
-    # @articles = Articles.first!
-    @journal_articles = Journal::Article.where(magensinus: true).order(published_at: :asc)
+    @articles ||= Articles.first!
+    @journal_articles ||= Journal::Article.where(magensinus: true).order(published_at: :asc)
   end
 
   # /articles/Hgy897jgfv

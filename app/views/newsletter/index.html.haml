@@ -1,18 +1,19 @@
 // Index
 
 .panel-one
-  .main.col-960-1
-    .main-box.col-960-1
-      -if @newsletter.title.presence
-        .main-item.col-960-1
-          %h1= @newsletter.title
-      -if @newsletter.description.presence
-        .main-item.col-960-1
-          - if flash[:success]
-            %p.medium= @newsletter.success
-          - elsif flash[:failure]
-            %p.medium= @newsletter.failure
-          - else
-            %p.medium= @newsletter.description
+  - cache "newsletter" do
+    .main.col-960-1
+      .main-box.col-960-1
+        -if @newsletter.title.presence
+          .main-item.col-960-1
+            %h1= @newsletter.title
+        -if @newsletter.description.presence
+          .main-item.col-960-1
+            - if flash[:success]
+              %p.medium= @newsletter.success
+            - elsif flash[:failure]
+              %p.medium= @newsletter.failure
+            - else
+              %p.medium= @newsletter.description
 
-  = render "form", object: @subscription
+    = render "form", object: @subscription

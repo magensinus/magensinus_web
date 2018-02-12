@@ -3,6 +3,6 @@
 class AboutController < ApplicationController
   # /about
   def index
-    @about = About.first!
+    @about ||= About.first!
   end
 end

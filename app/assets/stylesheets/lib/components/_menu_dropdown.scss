@@ -1,18 +1,27 @@
-// Sponsors
+// Template
 
-$class: "social";
+$class: "menu-dropdown";
 
 .#{$class} {
-  float: right;
+  background-color: $gray-lightest;
+  display: none;
+  float: left;
+  padding: 12px;
+  position: absolute;
+  top: 48px;
+  width: 240px;
+  z-index: 99999;
   .#{$class}-box {
     @include clear-list;
     float: left;
-    padding: 4px;
+    width: 100%;
     .#{$class}-item {
       float: left;
       padding: 4px;
-      img {
-        height: 40px;
+      width: 100%;
+      .link {
+        float: left;
+        width: 100%;
       }
     }
   }

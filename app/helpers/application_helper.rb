@@ -1,18 +1,22 @@
 # frozen_string_literal: true
 
 module ApplicationHelper
-  # Magensinus settings
-  def magensinus_settings
-    @magensinus_settings = Settings::first!
+  # Fetch settings
+  def fetch_settings
+    @fetch_settings = Settings::first!
   end
 
-  # Endorsement badges
-  def endorsement_badges
-    @endorsement_badges = Endorsement::Badge.where(magensinus: true)
+  # Fetch badges
+  def fetch_badges
+    @fetch_badges = Endorsement::Badge.where(magensinus: true)
   end
 
-  # Magensinus networks
-  def magensinus_networks
-    @magensinus_networks = Network.all
+  # Fetch networks
+  def fetch_networks
+    @fetch_networks = Network.all
+  end
+
+  def fetch_categories
+    @fetch_categories ||= Academy::Category.where(published: true, magensinus: true)
   end
 end

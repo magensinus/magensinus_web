@@ -1,9 +1,9 @@
-// Badges
+// Sponsors
 
-$class: "badges";
+$class: "social";
 
 .#{$class} {
-  float: left;
+  float: right;
   .#{$class}-box {
     @include clear-list;
     float: left;

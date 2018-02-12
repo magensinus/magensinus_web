@@ -15,5 +15,8 @@ module Academy
 
     # Scoping
     scope :published, -> { where(published: true, magensinus: true).where("published_at <= ?", Time.zone.now).order(position: :asc) }
+
+    # Academy category
+    belongs_to :category, optional: true, foreign_key: "academy_category_id", inverse_of: false
   end
 end

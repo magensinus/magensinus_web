@@ -1,11 +1,12 @@
 // Index
 
 .panel-one
-  .main.col-960-1
-    .main-box.col-960-1
-      - if @about.title.presence
-        .main-item.col-960-1
-          %h1= @about.title
-      - if @about.description.presence
-        .main-item.col-960-1
-          %p.medium= @about.description
+  - cache "about" do
+    .main.col-960-1
+      .main-box.col-960-1
+        - if @about.title.presence
+          .main-item.col-960-1
+            %h1= @about.title
+        - if @about.description.presence
+          .main-item.col-960-1
+            %p.medium= @about.description

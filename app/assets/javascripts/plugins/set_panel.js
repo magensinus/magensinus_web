@@ -1,4 +1,4 @@
-// Set Panel
+// Set panel
 
 (function($, window, document) {
   $.fn.extend({

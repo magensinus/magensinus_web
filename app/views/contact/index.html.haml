@@ -1,38 +1,39 @@
 // Index
 
 .panel-one
-  .main.col-960-2
-    .main-box.col-960-2
-      .main-item.col-960-2
-        %h1= @contact.title
-      .main-item.col-960-2
-        %p.medium= @contact.description
-    .main-box.col-960-2
-      .main-item.col-960-2
-        - if @contact.address_one.presence
-          %p.small= @contact.address_one
-        - if @contact.address_two.presence
-          %p.small= @contact.address_two
-        - if @contact.postcode.presence && @contact.city.presence
-          %p.small
-            = @contact.postcode
-            = @contact.city
-        - if @contact.country.presence
-          %p.small= @contact.country
-      .main-item.col-960-2
-        - if @contact.phone.presence
-          %p.small
-            #{t("contact.phone")}:
-            = @contact.phone
-        - if @contact.fax.presence
-          %p.small
-            #{t("contact.fax")}:
-            = @contact.fax
-        - if @contact.email.presence
-          %p.small
-            #{t("contact.email")}:
-            = @contact.email
-  .main.col-960-2
-    .main-box.col-960-2
-      .main-item.col-960-2
-        #map
+  - cache "contact" do
+    .main.col-960-2
+      .main-box.col-960-2
+        .main-item.col-960-2
+          %h1= @contact.title
+        .main-item.col-960-2
+          %p.medium= @contact.description
+      .main-box.col-960-2
+        .main-item.col-960-2
+          - if @contact.address_one.presence
+            %p.small= @contact.address_one
+          - if @contact.address_two.presence
+            %p.small= @contact.address_two
+          - if @contact.postcode.presence && @contact.city.presence
+            %p.small
+              = @contact.postcode
+              = @contact.city
+          - if @contact.country.presence
+            %p.small= @contact.country
+        .main-item.col-960-2
+          - if @contact.phone.presence
+            %p.small
+              #{t("contact.phone")}:
+              = @contact.phone
+          - if @contact.fax.presence
+            %p.small
+              #{t("contact.fax")}:
+              = @contact.fax
+          - if @contact.email.presence
+            %p.small
+              #{t("contact.email")}:
+              = @contact.email
+    .main.col-960-2
+      .main-box.col-960-2
+        .main-item.col-960-2
+          #map

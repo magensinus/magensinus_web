@@ -1,12 +1,13 @@
 // Articles
 
-- @journal_articles.each do |item|
-  - if item.title.presence
-    .main-item.col-960-1
-      %h1= item.title
-  - if item.description.presence
-    .main-item.col-960-1
-      %p.medium= item.description
-  - if item.presence
-    .main-item.col-960-1
-      = link_to "#{t("read_more")}", article_path(item), class: "button tiny left"
+- objects.each do |object|
+  - cache "journal_article_#{object.id}" do
+    - if object.title.presence
+      .main-item.col-960-1
+        %h1= object.title
+    - if object.description.presence
+      .main-item.col-960-1
+        %p.medium= object.description
+    - if object.presence
+      .main-item.col-960-1
+        = link_to "#{t("read_more")}", article_path(object), class: "button tiny left"

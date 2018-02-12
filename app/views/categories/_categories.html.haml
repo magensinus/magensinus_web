@@ -1,0 +1,20 @@
+// Courses
+
+-#
+  - if objects.presence
+    %hr.separator.medium
+    .main-box.col-960-1
+      - objects.each do |object|
+        - cache "academy_course_#{object.id}" do
+          .main-item.col-960-2
+            = link_to object.title, course_path(object), class: "link medium"
+
+- if objects.presence
+  .main-box.col-960-1
+    - objects.each do |object|
+      .main-item.col-960-1
+        %h3= object.title
+      - object.courses.each do |item|
+        .main-item.col-960-2
+          = link_to item.title, course_path(item), class: "link medium"
+      %hr.separator.medium

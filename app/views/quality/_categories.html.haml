@@ -4,13 +4,14 @@
   %hr.separator.medium
   .main-box.col-960-1
     - objects.each do |object|
-      - if object.assets.presence
-        .main-object.col-960-1
-          %h3.blue-darkest-ft= object.title
-        - object.assets.each do |asset|
-          .main-object.col-960-2
-            = link_to asset.document_box_url.to_s, class: "link small green", target: "_blank" do
-              - if asset.document_caption.presence
-                = asset.document_caption
-              - else
-                Documento
+      - cache "quality_asset_#{object.id}" do
+        - if object.assets.presence
+          .main-item.col-960-1
+            %h3= object.title
+          - object.assets.each do |asset|
+            .main-item.col-960-2
+              = link_to asset.document_box_url.to_s, class: "link small green", target: "_blank" do
+                - if asset.document_caption.presence
+                  = asset.document_caption
+                - else
+                  Documento

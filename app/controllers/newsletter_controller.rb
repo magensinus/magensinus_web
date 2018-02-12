@@ -3,7 +3,7 @@
 class NewsletterController < ApplicationController
   # /newsletter
   def index
-    @newsletter = Newsletter.first!
+    @newsletter ||= Newsletter.first!
     @subscription = Subscription.new
   end
 

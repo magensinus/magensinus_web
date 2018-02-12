@@ -1,0 +1,9 @@
+// Networks
+
+- if fetch_networks.presence
+  %nav.networks
+    %ul.networks-box
+      - fetch_networks.each do |object|
+        - cache "networks-#{object.id}" do
+          %li.networks-item
+            = link_to image_tag(object.thumb_box_url.to_s), object.url, class: "link"

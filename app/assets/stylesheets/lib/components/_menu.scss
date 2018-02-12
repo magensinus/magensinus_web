@@ -11,8 +11,10 @@ $class: "menu";
       float: left;
       padding: 8px;
       .link {
+        float: left;
         font-weight: 700;
         padding: 3px 0;
+        text-decoration: none;
         text-transform: uppercase;
       }
     }

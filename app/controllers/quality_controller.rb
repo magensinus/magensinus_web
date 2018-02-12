@@ -3,7 +3,7 @@
 class QualityController < ApplicationController
   # /quality
   def index
-    @quality = Quality.first!
-    @quality_categories = Wallet::Category.where(magensinus: true)
+    @quality ||= Quality.first!
+    @quality_categories ||= Wallet::Category.where(magensinus: true)
   end
 end

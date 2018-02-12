@@ -11,6 +11,9 @@ $class: "sitemap";
     .#{$class}-item {
       float: left;
       padding: 4px;
+      .link {
+        float: left;
+      }
     }
   }
 }
