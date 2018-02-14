@@ -7,8 +7,6 @@ module Journal
 
     # Concerns
     include Slug
-    include CleanVideo
-    include SortablePosition
 
     # Relationships
     belongs_to :article, foreign_key: "journal_article_id", inverse_of: false
