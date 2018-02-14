@@ -3,7 +3,8 @@
 .menu-dropdown
   %ul.menu-dropdown-box
     %li.menu-dropdown-item
-      = link_to "Cursos de Nível 4", "#", class: "link nano left"
-    - fetch_categories.each do |object|
-      %li.menu-dropdown-item
-        = link_to object.title, categories_path, class: "link nano left"
+      = link_to "Cursos de Nível 4", schools_path, class: "link nano left"
+    - if fetch_categories.presence
+      - fetch_categories.each do |object|
+        %li.menu-dropdown-item
+          = link_to object.title, categories_path, class: "link nano left"

@@ -1,0 +1,14 @@
+// Index
+
+.panel-one
+  - cache "schools" do
+    .main.col-960-1
+      .main-box.col-960-1
+        - if @schools.title.presence
+          .main-item.col-960-1
+            %h1= @schools.title
+        - if @schools.description.presence
+          .main-item.col-960-1
+            %p.large= @schools.description
+
+    -# = render "schools", objects: @schools
