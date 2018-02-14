@@ -18,6 +18,9 @@
 
 .byebug_history
 
+# Ignore uploaded files
+/public/uploads
+
 # IMPORTANT: Environment files that may contain sensitive data
 config/figaro
 config/figaro/*
