@@ -10,9 +10,9 @@
         -if @newsletter.description.presence
           .main-item.col-960-1
             - if flash[:success]
-              %p.medium= @newsletter.success
+              %p.medium= flash[:success]
             - elsif flash[:failure]
-              %p.medium= @newsletter.failure
+              %p.medium= flash[:failure]
             - else
               %p.medium= @newsletter.description
 
