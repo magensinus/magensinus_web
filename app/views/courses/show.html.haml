@@ -15,22 +15,18 @@
       - if @academy_course.description.presence
         .main-item.col-960-1
           %p.medium= @academy_course.description
-
-      - if @academy_course.misc.presence
-        .main-item.col-960-4
-          .menu-aside
-            .menu-aside-box
+    .main-box.col-960-1
+      .main-item.col-960-4
+        .menu-aside
+          .menu-aside-box
+            - if @academy_course.document_box.presence
               .menu-aside-item
-                = link_to @academy_course.document_box.url.to_s, class: "button tiny left wide", target: "_blank" do
-                  - if @academy_course.document_caption.presence
-                    = @academy_course.document_caption
-                  - else
-                    Descarregar PDF
-              .menu-aside-item
-                = link_to "Somewhere", "#", class: "button tiny left wide"
-        .main-item.col-960-4-3
-          .misc
-            .misc-box
-              .misc-item
-                .trix
-                  = @academy_course.misc.html_safe
+                = link_to @academy_course.document_caption, @academy_course.document_box.url.to_s, class: "button tiny left wide", target: "_blank"
+            .menu-aside-item
+              = link_to "Inscrições", "#", class: "off button tiny left wide"
+      .main-item.col-960-4-3
+        .misc
+          .misc-box
+            .misc-item
+              .trix.small
+                = @academy_course.misc.html_safe

@@ -56,4 +56,11 @@
       width: 100%;
     }
   }
+  &.small {
+    p,
+    div {
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
 }
