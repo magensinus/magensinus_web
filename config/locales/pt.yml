@@ -1,4 +1,5 @@
 pt:
+  document: "Documento"
   primary_urls:
     home: "Home"
     about: "Quem Somos"
@@ -7,6 +8,7 @@ pt:
     articles: "Notícias"
     contact: "Contacto"
     newsletter: "Newsletter"
+    schools: "Escolas"
   read_more: "Ler Mais"
   contact:
     fax: "Fax"

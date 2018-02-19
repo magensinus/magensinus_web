@@ -17,6 +17,6 @@ module ApplicationHelper
   end
 
   def fetch_categories
-    @fetch_categories ||= Academy::Category.where(published: true, magensinus: true)
+    @fetch_categories ||= Academy::Category.where(magensinus: true, published: true)
   end
 end

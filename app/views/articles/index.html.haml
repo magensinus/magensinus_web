@@ -1,6 +1,4 @@
 // Index
 
 .panel-one
-  .main.col-960-1
-    .main-box.col-960-1
-      = render "articles", objects: @journal_articles
+  = render "journal_articles", objects: @journal_articles if @journal_articles.presence

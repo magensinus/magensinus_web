@@ -1,13 +1,5 @@
 // Show
 
 = render "breadcrumbs"
-
 .panel-one
-  .main.col-960-1
-    .main-box.col-960-1
-      - if @journal_article.title.presence
-        .main-item.col-960-1
-          %h1= @journal_article.title
-      - if @journal_article.cover_box.presence
-        .main-item.col-960-1
-          = image_tag @journal_article.cover_box_url.to_s
+  = render "journal_article", object: @journal_article if @journal_article.presence

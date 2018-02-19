@@ -1,0 +1,12 @@
+// Journal article
+
+.main.col-960-1
+  .main-box.col-960-1
+    - if object.title.presence
+      .main-item.col-960-1
+        %h1= object.title
+    - if object.cover_box.presence
+      .main-item.col-960-1
+        = image_tag object.cover_box_url.to_s, class: "left"
+
+= render "journal_article_assets", object: object

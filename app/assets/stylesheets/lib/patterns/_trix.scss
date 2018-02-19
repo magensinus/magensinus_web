@@ -1,8 +1,8 @@
 .trix {
   p,
   div {
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 28px;
+    line-height: 36px;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -39,5 +39,21 @@
 
   del {
     text-decoration: line-through;
+  }
+
+  .video {
+    padding: 16px 0;
+    iframe {
+      float: left;
+      width: 944px;
+      height: 531px;
+    }
+  }
+  .image {
+    padding: 16px 0;
+    img {
+      float: left;
+      width: 100%;
+    }
   }
 }

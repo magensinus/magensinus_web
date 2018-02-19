@@ -1,10 +1,11 @@
-// Schools
+// Quality
 
 .main.col-960-1
   .main-box.col-960-1
     - if object.title.presence
       .main-item.col-960-1
         %h1= object.title
-    - if object.description.presence
+    - if @quality.description.presence
       .main-item.col-960-1
         %p.medium= object.description
+%hr.separator.medium

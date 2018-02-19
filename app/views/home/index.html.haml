@@ -1,12 +1,4 @@
 // Index
 
 .panel-one
-  - cache "home" do
-    .main.col-960-1
-      .main-box.col-960-1
-        - if @home.title.presence
-          .main-item.col-960-1
-            %h1= @home.title
-        - if @home.description.presence
-          .main-item.col-960-1
-            %p.large= @home.description
+  = render "home", object: @home if @home.presence

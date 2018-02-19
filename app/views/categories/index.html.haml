@@ -1,13 +1,5 @@
 // Index
 
 .panel-one
-  .main.col-960-1
-    .main-box.col-960-1
-      - if @courses.title.presence
-        .main-item.col-960-1
-          %h1= @courses.title
-      - if @courses.description.presence
-        .main-item.col-960-1
-          %p.medium= @courses.description
-
-    = render "categories", objects: @categories
+  = render "courses", object: @courses if @courses.presence
+  = render "academy_categories", objects: @academy_categories if @academy_categories.presence

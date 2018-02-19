@@ -1,13 +1,5 @@
 // Index
 
 .panel-one
-  .main.col-960-1
-    .main-box.col-960-1
-      - if @quality.title.presence
-        .main-item.col-960-1
-          %h1= @quality.title
-      - if @quality.description.presence
-        .main-item.col-960-1
-          %p.medium= @quality.description
-
-    = render "categories", objects: @quality_categories
+  = render "quality", object: @quality if @quality.presence
+  = render "wallet_categories", objects: @wallet_categories if @wallet_categories.presence

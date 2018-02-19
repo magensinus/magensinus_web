@@ -9,6 +9,9 @@ $class: "main";
     .#{$class}-item {
       float: left;
       padding: 8px;
+      img {
+        width: 100%;
+      }
     }
   }
 }
