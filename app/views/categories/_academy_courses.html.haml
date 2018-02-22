@@ -1,0 +1,10 @@
+// Categories
+
+.main.col-960-1
+  .main-box.col-960-1
+    .main-item.col-960-1
+      %h3= parent.title
+    - objects.each do |object|
+      .main-item.col-960-2
+        = link_to object.title, course_path(object), class: "link medium"
+  %hr.separator.medium

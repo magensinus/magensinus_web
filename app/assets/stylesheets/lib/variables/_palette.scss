@@ -180,68 +180,68 @@ $green-darkest:   #33511a;
 }
 
 // Yellow
-$yellow-03: #ffffe1;
-$yellow-02: #ffffa6;
-$yellow-01: #feff6b;
-$yellow-00: #feff30;
-$yellow-10: #f3f400;
-$yellow-20: #b8b900;
-$yellow-30: #7e7e00;
+$yellow-lightest: #ffffe1;
+$yellow-lighter:  #ffffa6;
+$yellow-light:    #feff6b;
+$yellow:          #feff30;
+$yellow-dark:     #f3f400;
+$yellow-darker:   #b8b900;
+$yellow-darkest:  #7e7e00;
 
 // Yellow backgrounds
 .yellow-03-bg {
-  background-color: $yellow-03;
+  background-color: $yellow-lightest;
 }
 .yellow-02-bg {
-  background-color: $yellow-02;
+  background-color: $yellow-lighter;
 }
 .yellow-01-bg {
-  background-color: $yellow-01;
+  background-color: $yellow-light;
 }
 .yellow-00-bg {
-  background-color: $yellow-00;
+  background-color: $yellow;
 }
 .yellow-10-bg {
-  background-color: $yellow-10;
+  background-color: $yellow-dark;
 }
 .yellow-20-bg {
-  background-color: $yellow-20;
+  background-color: $yellow-darker;
 }
 .yellow-30-bg {
-  background-color: $yellow-30;
+  background-color: $yellow-darkest;
 }
 
 // Yellow fonts
 .yellow-03-ft {
-  color: $yellow-03;
+  color: $yellow-lightest;
 }
 .yellow-02-ft {
-  color: $yellow-02;
+  color: $yellow-lighter;
 }
 .yellow-01-ft {
-  color: $yellow-01;
+  color: $yellow-light;
 }
 .yellow-00-ft {
-  color: $yellow-00;
+  color: $yellow;
 }
 .yellow-10-ft {
-  color: $yellow-10;
+  color: $yellow-dark;
 }
 .yellow-20-ft {
-  color: $yellow-20;
+  color: $yellow-darker;
 }
 .yellow-30-ft {
-  color: $yellow-30;
+  color: $yellow-darkest;
 }
 
 // Red
-$red-lightest:  #ffffe1;
-$red-lighter:   #ffffa6;
-$red-light:     #feff6b;
-$red:           #feff30;
-$red-dark:      #f3f400;
-$red-darker:    #b8b900;
-$red-darkest:   #7e7e00;
+$red-lightest:  #ffe1e8;
+$red-lighter:   #ffa6bc;
+$red-light:     #ff6b90;
+$red:           #ff3064;
+$red-dark:      #f4003d;
+$red-darker:    #b9002f;
+$red-darkest:   #7e0020;
 
 // Red backgrounds
 .red-lightest-bg {

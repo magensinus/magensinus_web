@@ -1,17 +1,5 @@
 // Index
 
 .panel-one
-  .main.col-960-1
-    .main-box.col-960-1
-      -if @newsletter.title.presence
-        .main-item.col-960-1
-          %h1= @newsletter.title
-      -if @newsletter.description.presence
-        .main-item.col-960-1
-          - if flash[:success]
-            %p.medium= flash[:success]
-          - elsif flash[:failure]
-            %p.medium= flash[:failure]
-          - else
-            %p.medium= @newsletter.description
-  = render "form", object: @subscription
+  = render "newsletter", object: @newsletter
+  = render "form", object: @subscription unless flash[:success]

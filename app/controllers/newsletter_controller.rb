@@ -3,7 +3,7 @@
 class NewsletterController < ApplicationController
   # /newsletter
   def index
-    @newsletter ||= Newsletter.first!
+    @newsletter = Newsletter.first!
     @subscription = Subscription.new
   end
 
@@ -11,11 +11,10 @@ class NewsletterController < ApplicationController
   def create
     @newsletter = Newsletter.first!
     @subscription = Subscription.new(subscription_params)
-
     if @subscription.save
-      flash[:success] = @newsletter.success
+      flash[:success] = @settings.newsletter_success
     else
-      flash[:failure] = @newsletter.failure
+      flash[:failure] = @settings.newsletter_failure
     end
     redirect_to newsletter_index_path
   end

@@ -3,7 +3,7 @@
 class CoursesController < ApplicationController
   # /courses/tyyt56hhhj
   def show
-    @academy_category = Academy::Category.find_by(slug: params[:category_id])
     @academy_course = Academy::Course.find_by(slug: params[:id])
+    @academy_category = @academy_course.category.slug
   end
 end

@@ -1,0 +1,49 @@
+// Form
+
+= form_with model: [parent, object], url: category_enrollments_path, class: "main col-960-1", local: true do |f|
+  = f.hidden_field :academy_category_id, value: parent.id
+  %fieldset.main-box.col-960-1
+    .main-item.col-960-1
+      %p Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam id dolor id nibh ultricies vehicula ut id elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+    .wrapper
+      = f.collection_check_boxes :course_ids, courses, :id, :title, include_hidden: false do |tag|
+        .main-item.col-960-2
+          .checkbox.left
+            = tag.check_box(class: "left")
+            = tag.label(class: "left")
+    %hr.separator.medium
+    .main-item.col-960-3
+      = f.label :name
+      = f.text_field :name
+    .main-item.col-960-3
+      = f.label :surname
+      = f.text_field :surname
+    .main-item.col-960-3
+      = f.label :date_of_birth
+      = f.date_field :dob, as: :date, value: f.object.try(:strftime, "%m/%d/%Y"), max: Date.today
+    .main-item.col-960-2
+      = f.label :email
+      = f.text_field :email
+    .main-item.col-960-2
+      = f.label :phone
+      = f.text_field :phone
+    %hr.separator.medium
+    .main-item.col-960-2
+      = f.label :address_one
+      = f.text_field :address_one
+    .main-item.col-960-2
+      = f.label :address_two
+      = f.text_field :address_two
+    .main-item.col-960-3
+      = f.label :postcode
+      = f.text_field :postcode
+    .main-item.col-960-3
+      = f.label :city
+      = f.text_field :city
+    .main-item.col-960-3
+      = f.label :country
+      = f.text_field :country
+    %hr.separator.medium
+    .wrapper
+      .main-item.col-960-2
+        = f.submit "Enviar", class: "button small left"

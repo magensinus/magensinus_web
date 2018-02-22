@@ -1,0 +1,5 @@
+// Index
+
+.panel-one
+  = render "courses", object: @courses if @courses.presence
+  = render "academy_courses", parent: @academy_category, objects: @academy_courses if @academy_category.presence

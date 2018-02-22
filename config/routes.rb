@@ -6,7 +6,9 @@ Rails.application.routes.draw do
   resources :about,       only: [:index],                       controller: :about
   resources :quality,     only: [:index],                       controller: :quality
   resources :courses,     only: [:show],                        controller: :courses, path: :courses
-  resources :categories,  only: [:index],                       controller: :categories, path: :courses
+  resources :categories,  only: [:index, :show],                controller: :categories do
+    resources :enrollments,                                     controller: :enrollments
+  end
   resources :schools,     only: [:index],                       controller: :schools
   resources :articles,    only: [:index, :show],                controller: :articles
   resources :contact,     only: [:index],                       controller: :contact

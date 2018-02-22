@@ -9,9 +9,20 @@ form {
     margin: 0;
     padding: 0;
   }
+  label {
+    display: inline-block;
+    font-family: $sans;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
   input {
     @include border-corner(4px);
+    background-color: $gray-lightest;
     border: 0;
+    color: $gray;
     font-family: $sans;
     font-size: 18px;
     line-height: 24px;
@@ -19,9 +30,46 @@ form {
     padding: 16px;
     width: 100%;
   }
+  input[type=date] {
+    appearance: none;
+    -webkit-appearance: none;
+    display: inline-block !important;
+    visibility: visible !important;
+  }
+  /* Removes the clear button from date inputs */
+  input[type="date"]::-webkit-clear-button {
+    display: none;
+  }
+  /* Removes the spin button */
+  input[type="date"]::-webkit-inner-spin-button {
+    display: none;
+  }
+  /* Always display the drop down caret */
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    color: $gray;
+  }
+  input[type="date"], focus {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+  }
+  input[type=radio],
+  input[type=checkbox] {
+    height: 13px;
+    margin: 5px 8px 0 0;
+    width: 13px;
+  }
+  .checkbox {
+    label {
+      width: auto;
+    }
+  }
   button {
     @include border-corner(4px);
     font-family: $sans;
+    width: 100%;
+  }
+  .wrapper {
     width: 100%;
   }
 }

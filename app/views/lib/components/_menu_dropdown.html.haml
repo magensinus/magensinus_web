@@ -7,4 +7,4 @@
     - if fetch_categories.presence
       - fetch_categories.each do |object|
         %li.menu-dropdown-item
-          = link_to object.title, categories_path, class: "link nano left"
+          = link_to object.title, category_path(object), class: "link nano left"

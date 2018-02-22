@@ -1,0 +1,14 @@
+// Newsletter
+
+.main-box.col-960-1
+  -if object.title.presence
+    .main-item.col-960-1
+      %h1= object.title
+  -if object.description.presence
+    .main-item.col-960-1
+      - if flash[:success]
+        %p.medium.green-ft= flash[:success]
+      - elsif flash[:failure]
+        %p.medium.red-ft= flash[:failure]
+      - else
+        %p.medium= object.description

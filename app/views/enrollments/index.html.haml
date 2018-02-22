@@ -1,0 +1,26 @@
+// Index
+
+- content_for :breadcrumbs do
+  .breadcrumbs
+    %ul.breadcrumbs-box
+      %li.breadcrumbs-item
+        = link_to "Voltar", :back, class: "link mono tiny"
+        -# = link_to "Voltar", category_path(@academy_category), class: "link mono tiny"
+
+.panel-one
+  .main.col-960-1
+    .main-box.col-960-1
+      - if @academy_category.title.presence
+        .main-item.col-960-1
+          %h1
+            Pré-inscrição:
+            = @academy_category.title
+        - if flash[:success]
+          .main-item.col-960-1
+            %p.medium.green-ft= flash[:success]
+        - if flash[:failure]
+          .main-item.col-960-1
+            %p.medium.red-ft= flash[:failure]
+    - unless flash[:success]
+      %hr.separator.medium
+      = render "form", parent: @academy_category, object: @academy_enrollment, courses: @academy_courses
