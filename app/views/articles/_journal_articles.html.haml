@@ -11,4 +11,4 @@
           %p.medium= object.description
       - if object.presence
         .main-item.col-960-1
-          = link_to "#{t("read_more")}", article_path(object), class: "button tiny left"
+          = link_to t("read_more"), article_path(object), class: "button tiny left"

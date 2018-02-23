@@ -4,11 +4,9 @@
   .menu
     %ul.menu-box
       - fetch_primary_urls.each do |object|
-        -#
-        - if object[:id] == 3
-          %li{ class: "menu-item #{active_class(object[:url])}" }
+        %li{ class: "menu-item #{active_class(object[:url])}" }
+          - if object[:id] == 3
             = link_to object[:title], object[:url], class: "link nano left #{object[:klass]}"
             = render "lib/components/menu_dropdown"
-        - else
-          %li{ class: "menu-item #{active_class(object[:url])}" }
+          - else
             = link_to object[:title], object[:url], class: "link nano left"

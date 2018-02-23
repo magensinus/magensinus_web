@@ -23,4 +23,4 @@
             %p.medium.red-ft= flash[:failure]
     - unless flash[:success]
       %hr.separator.medium
-      = render "form", parent: @academy_category, object: @academy_enrollment, courses: @academy_courses
+      = render "form", parent: @academy_category, object: @academy_enrollment, courses: @academy_courses, settings: @settings

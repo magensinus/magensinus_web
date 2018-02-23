@@ -4,7 +4,7 @@
   = f.hidden_field :academy_category_id, value: parent.id
   %fieldset.main-box.col-960-1
     .main-item.col-960-1
-      %p= @settings.enrollment_description
+      %p= settings.enrollment_description
     .wrapper
       = f.collection_check_boxes :course_ids, courses, :id, :title, include_hidden: false do |tag|
         .main-item.col-960-2
@@ -20,7 +20,7 @@
       = f.text_field :surname
     .main-item.col-960-3
       = f.label :date_of_birth
-      = f.date_field :dob, as: :date, value: f.object.try(:strftime, "%m/%d/%Y"), max: Date.today
+      = f.date_field :dob, as: :date, value: f.object.try(:strftime, "%m/%d/%Y"), max: Time.zone.today
     .main-item.col-960-2
       = f.label :email
       = f.text_field :email
