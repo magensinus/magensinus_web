@@ -4,11 +4,11 @@
   = f.hidden_field :academy_category_id, value: parent.id
   %fieldset.main-box.col-960-1
     .main-item.col-960-1
-      %p Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam id dolor id nibh ultricies vehicula ut id elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+      %p= @settings.enrollment_description
     .wrapper
       = f.collection_check_boxes :course_ids, courses, :id, :title, include_hidden: false do |tag|
         .main-item.col-960-2
-          .checkbox.left
+          .checkbox.underline.left
             = tag.check_box(class: "left")
             = tag.label(class: "left")
     %hr.separator.medium

@@ -1,10 +1,11 @@
 // Menu dropdown
 
-.menu-dropdown
-  %ul.menu-dropdown-box
-    %li.menu-dropdown-item
-      = link_to t("primary_urls.schools"), schools_path, class: "link nano left"
-    - if fetch_categories.presence
+- if fetch_categories.presence
+  .menu-dropdown
+    %ul.menu-dropdown-box
+      -#
+        %li.menu-dropdown-item
+          = link_to t("primary_urls.schools"), schools_path, class: "link nano left"
       - fetch_categories.each do |object|
         %li.menu-dropdown-item
           = link_to object.title, category_path(object), class: "link nano left"

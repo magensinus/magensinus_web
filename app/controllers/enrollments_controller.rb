@@ -48,7 +48,21 @@ class EnrollmentsController < ApplicationController
       to: @academy_category.email,
       template_id: "4858883",
       template_model: {
-        courses: @courses
+        name:               @academy_enrollment.name,
+        surname:            @academy_enrollment.surname,
+        dob:                @academy_enrollment.dob,
+        email:              @academy_enrollment.email,
+        phone:              @academy_enrollment.phone,
+        address_one:        @academy_enrollment.address_one,
+        address_two:        @academy_enrollment.address_two,
+        postcode:           @academy_enrollment.postcode,
+        city:               @academy_enrollment.city,
+        country:            @academy_enrollment.country,
+        secondary_name:     @academy_enrollment.secondary_name,
+        secondary_surname:  @academy_enrollment.secondary_surname,
+        secondary_email:    @academy_enrollment.secondary_email,
+        secondary_phone:    @academy_enrollment.secondary_phone,
+        courses:            @courses
       },
       tag: "enrollment"
     )
