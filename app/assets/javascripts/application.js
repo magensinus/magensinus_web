@@ -14,5 +14,6 @@
 //= require turbolinks
 //= require jquery/dist/jquery
 //= require plugins/set_panel
+//= require altai_off/dist/altai_off
 //= require altai_toggle/dist/altai_toggle
 //= require initializer

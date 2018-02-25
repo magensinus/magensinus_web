@@ -1,0 +1,66 @@
+// Menu responsive
+
+$class: "menu-responsive";
+
+.#{$class} {
+  float: left;
+  width: 100%;
+  .#{$class}-box {
+    @include clear-list;
+    float: left;
+    padding: 8px;
+    width: 100%;
+    .#{$class}-item {
+      float: left;
+      padding: 0;
+      width: 100%;
+      .link {
+        float: left;
+        font-weight: 700;
+        padding: 3px 0;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        width: 100%;
+      }
+    }
+  }
+}
+
+// Media Queries
+
+@media #{$tiny} {
+  .responsive {
+    @include show-block-element;
+  }
+  .responsive-hide {
+    @include hide-block-element;
+  }
+}
+
+@media #{$small} {
+  .responsive {
+    @include show-block-element;
+  }
+  .responsive-hide {
+    @include hide-block-element;
+  }
+}
+
+@media #{$medium} {
+  .responsive {
+    @include hide-block-element;
+  }
+  .responsive-hide {
+    @include show-block-element;
+  }
+}
+
+@media #{$large} {
+  .responsive {
+    @include hide-block-element;
+  }
+  .responsive-hide {
+    @include show-block-element;
+  }
+}

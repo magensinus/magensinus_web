@@ -1,15 +1,18 @@
 // Initializer
 
 bindEvents = function() {
-  $(".panel-one").setPanel({
-    trim: 206
-  });
-  $(".panel-two").setPanel({
-    trim: 138
-  });
+  $(".off").altaiOff();
+
+  $(".panel-one").setPanel({ trim: 206 });
+  $(".panel-two").setPanel({ trim: 138 });
+
   $(".menu-dropdown").altaiToggle({
     effect: "fade",
     klass: ".menu-dropdown-trigger"
+  });
+  $(".menu-responsive").altaiToggle({
+    effect: "slide",
+    klass: ".menu-responsive-trigger"
   });
 };
 

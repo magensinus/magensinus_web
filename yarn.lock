@@ -2,6 +2,12 @@
 # yarn lockfile v1
 
 
+altai_off@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/altai_off/-/altai_off-1.0.2.tgz#58032164a160341f8a18f218b618f2947dfb960e"
+  dependencies:
+    jquery "^3.0.0"
+
 altai_toggle@^1.0.8:
   version "1.0.8"
   resolved "https://registry.yarnpkg.com/altai_toggle/-/altai_toggle-1.0.8.tgz#76c79f5351dff7087c6ec9fa63ad13d227b8f884"

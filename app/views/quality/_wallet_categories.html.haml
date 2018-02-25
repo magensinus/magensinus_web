@@ -1,9 +1,10 @@
 // Categories
 
-.main.col-960-1
-  .main-box.col-960-1
-    - objects.each do |object|
-      - if object.assets.presence
+- if objects.presence
+  %hr.separator.medium
+  .main.col-960-1
+    .main-box.col-960-1
+      - objects.each do |object|
         .main-item.col-960-1
           %h3= object.title
         - object.assets.each do |asset|

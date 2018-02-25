@@ -2,6 +2,7 @@
   "name": "magensinus_web",
   "private": true,
   "dependencies": {
+    "altai_off": "^1.0.2",
     "altai_toggle": "^1.0.8",
     "jquery": "^3.3.1"
   }
