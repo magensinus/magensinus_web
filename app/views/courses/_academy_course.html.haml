@@ -16,7 +16,7 @@
             .menu-aside-item
               = link_to object.document_caption, object.document_box.url.to_s, class: "button tiny left wide", target: "_blank"
           .menu-aside-item
-            = link_to "Pré-inscrição", category_enrollments_path(parent), class: "off button tiny left wide"
+            = link_to "Pré-inscrição", category_enrollments_path(parent), class: "button tiny left wide"
     - if object.misc.presence
       .main-item.col-960-4-3
         .misc

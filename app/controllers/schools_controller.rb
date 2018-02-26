@@ -6,5 +6,6 @@ class SchoolsController < ApplicationController
   # /schools
   def index
     @schools ||= Schools.first!
+    @academy_schools ||= Academy::School.where(published: true, magensinus: true)
   end
 end

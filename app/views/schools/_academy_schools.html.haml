@@ -1,0 +1,14 @@
+// Schools
+
+- if objects.presence
+  .main.col-960-1
+    .main-box.col-960-1
+      .main-item.col-960-1
+        %h3 Cursos de Nível IV
+      - objects.each do |object|
+        .main-item.col-960-2
+          %h3.extra-large= object.title if object.title.presence
+          %p= object.description if object.description.presence
+          %hr.separator.tiny
+          = link_to "visitar", object.url, target: "_blank", class: "button tiny left"
+  %hr.separator.medium

@@ -3,10 +3,10 @@
 class EnrollmentsController < ApplicationController
   # Callbacks
   # ---------
-  # Academy courses
-  before_action :academy_courses
   # Academy category
   before_action :academy_category
+  # Academy courses
+  before_action :academy_courses
 
   # Index
   # -----
