@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   resources :home,        only: [:index],                       controller: :home
   resources :about,       only: [:index],                       controller: :about
   resources :quality,     only: [:index],                       controller: :quality
-  resources :courses,     only: [:show],                        controller: :courses, path: :courses
+  resources :courses,     only: [:show],                        controller: :courses
   resources :categories,  only: [:index, :show],                controller: :categories do
     resources :enrollments,                                     controller: :enrollments
   end
