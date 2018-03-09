@@ -7,5 +7,6 @@
         %h1= object.title
     - if object.description.presence
       .main-item.col-960-1
-        %p.medium= object.description
+        .trix.medium
+          = safe_join([object.description.html_safe])
 %hr.separator.medium

@@ -6,7 +6,8 @@
       .main-item.col-960-2
         %h1= @contact.title
       .main-item.col-960-2
-        %p.medium= @contact.description
+        .trix.medium
+          = safe_join([@contact.description.html_safe])
     .main-box.col-960-2
       .main-item.col-960-2
         - if @contact.address_one.presence

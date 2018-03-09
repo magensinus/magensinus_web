@@ -7,4 +7,5 @@
         %h1= object.title
     - if object.description.presence
       .main-item.col-960-1
-        %p.large= object.description
+        .trix.large
+          = safe_join([object.description.html_safe])
