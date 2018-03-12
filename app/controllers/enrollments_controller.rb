@@ -42,9 +42,9 @@ class EnrollmentsController < ApplicationController
 
   # Send enrollment email
   def send_enrollment_email
-    @academy_enrollment = object
+    # @academy_enrollment = object
     @courses = []
-    @academy_enrollment_courses = Academy::EnrollmentCourse.where(academy_enrollment_id: object.id).includes(:course)
+    @academy_enrollment_courses = Academy::EnrollmentCourse.where(academy_enrollment_id: @academy_enrollment.id).includes(:course)
     @academy_enrollment_courses.each do |object|
       @courses << object.course.as_json(only: [:title])
     end
@@ -55,20 +55,20 @@ class EnrollmentsController < ApplicationController
       to: @academy_category.email,
       template_id: "4858883",
       template_model: {
-        name:               object.name,
-        surname:            object.surname,
-        dob:                object.dob,
-        email:              object.email,
-        phone:              object.phone,
-        address_one:        object.address_one,
-        address_two:        object.address_two,
-        postcode:           object.postcode,
-        city:               object.city,
-        country:            object.country,
-        secondary_name:     object.secondary_name,
-        secondary_surname:  object.secondary_surname,
-        secondary_email:    object.secondary_email,
-        secondary_phone:    object.secondary_phone,
+        name:               @academy_enrollment.name,
+        surname:            @academy_enrollment.surname,
+        dob:                @academy_enrollment.dob,
+        email:              @academy_enrollment.email,
+        phone:              @academy_enrollment.phone,
+        address_one:        @academy_enrollment.address_one,
+        address_two:        @academy_enrollment.address_two,
+        postcode:           @academy_enrollment.postcode,
+        city:               @academy_enrollment.city,
+        country:            @academy_enrollment.country,
+        secondary_name:     @academy_enrollment.secondary_name,
+        secondary_surname:  @academy_enrollment.secondary_surname,
+        secondary_email:    @academy_enrollment.secondary_email,
+        secondary_phone:    @academy_enrollment.secondary_phone,
         courses:            @courses
       },
       tag: "enrollment"
