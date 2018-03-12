@@ -4,8 +4,10 @@
   .main-box.col-960-1-1
     - if object.title.presence
       .main-item.col-960-1-1
-        %h1.green-ft= object.title
+        %h1.extra-large.green-ft= object.title
     - if object.description.presence
       .main-item.col-960-1-1
-        .trix.large.green
+        .trix.extra-large.green
           = safe_join([object.description.html_safe])
+        - if object.subtitle.presence
+          %p.small.white-ft= object.subtitle

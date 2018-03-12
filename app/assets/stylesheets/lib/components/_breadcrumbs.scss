@@ -12,6 +12,20 @@ $class: "breadcrumbs";
     .#{$class}-item {
       float: left;
       padding: 4px;
+      .link {
+        &:link, &:visited {
+          color: $white;
+          .icon * {
+            fill: $white;
+          }
+        }
+        &:hover, &:active {
+          color: $green;
+          .icon * {
+            fill: $green;
+          }
+        }
+      }
     }
   }
 }

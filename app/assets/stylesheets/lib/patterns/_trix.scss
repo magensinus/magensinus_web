@@ -17,6 +17,9 @@
     padding: 0;
     width: 100%;
   }
+  a {
+    display: inline-block;
+  }
   abbr,
   strong,
   code,
@@ -83,9 +86,20 @@
     }
   }
   &.large {
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 40px;
+    p,
+    div {
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 40px;
+    }
+  }
+  &.extra-large {
+    p,
+    div {
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 56px;
+    }
   }
   &.green {
     p,
