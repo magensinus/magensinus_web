@@ -9,6 +9,7 @@ html,
 body {
   @include border-box;
   @include clearfix;
+  background-color: $blue-darkest;
   font-family: $sans;
   font-size: 18px;
   line-height: 1;
@@ -18,14 +19,14 @@ body {
 }
 
 a {
-  color: black;
+  color: $green;
   &:link,
   &:visited {
-    color: black;
+    color: $green;
   }
   &:hover,
   &:active {
-    color: #777;
+    color: $white;
   }
 }
 

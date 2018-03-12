@@ -1,0 +1,60 @@
+// Column 960
+
+$width: 960px;
+$class: "col-960";
+
+@import "lib/columns/col_math";
+@import "lib/columns/col_setup";
+
+// Media Queries
+
+@media #{$tiny} {
+  $width: 240px;
+  .#{$class}-1    { width: (($width / 1) * 1); }
+  .#{$class}-2    { width: (($width / 1) * 1); }
+  .#{$class}-3    { width: (($width / 1) * 1); }
+  .#{$class}-3-2  { width: (($width / 1) * 1); }
+  .#{$class}-4    { width: (($width / 1) * 1); }
+  .#{$class}-4-2  { width: (($width / 1) * 1); }
+  .#{$class}-4-3  { width: (($width / 1) * 1); }
+  .#{$class}-5    { width: (($width / 1) * 1); }
+  .#{$class}-5-2  { width: (($width / 1) * 1); }
+  .#{$class}-5-3  { width: (($width / 1) * 1); }
+  .#{$class}-5-4  { width: (($width / 1) * 1); }
+  .#{$class}-6    { width: (($width / 1) * 1); }
+  .#{$class}-6-2  { width: (($width / 1) * 1); }
+  .#{$class}-6-3  { width: (($width / 1) * 1); }
+  .#{$class}-6-4  { width: (($width / 1) * 1); }
+  .#{$class}-6-5  { width: (($width / 1) * 1); }
+
+}
+
+@media #{$small} {
+  $width: 480px;
+  .#{$class}-1    { width: (($width / 1) * 1); }
+  .#{$class}-2    { width: (($width / 1) * 1); }
+  .#{$class}-3    { width: (($width / 1) * 1); }
+  .#{$class}-3-2  { width: (($width / 1) * 1); }
+  .#{$class}-4    { width: (($width / 1) * 1); }
+  .#{$class}-4-2  { width: (($width / 1) * 1); }
+  .#{$class}-4-3  { width: (($width / 1) * 1); }
+  .#{$class}-5    { width: (($width / 1) * 1); }
+  .#{$class}-5-2  { width: (($width / 1) * 1); }
+  .#{$class}-5-3  { width: (($width / 1) * 1); }
+  .#{$class}-5-4  { width: (($width / 1) * 1); }
+  .#{$class}-6    { width: (($width / 1) * 1); }
+  .#{$class}-6-2  { width: (($width / 1) * 1); }
+  .#{$class}-6-3  { width: (($width / 1) * 1); }
+  .#{$class}-6-4  { width: (($width / 1) * 1); }
+  .#{$class}-6-5  { width: (($width / 1) * 1); }
+}
+
+@media #{$medium} {
+  $width: 720px;
+  @import "lib/columns/col_math";
+}
+
+@media #{$large} {
+  $width: 960px;
+  @import "lib/columns/col_math";
+}

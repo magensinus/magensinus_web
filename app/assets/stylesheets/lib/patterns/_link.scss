@@ -42,6 +42,20 @@
       fill: $gray;
     }
   }
+  &.white {
+    &:link, &:visited {
+      color: $white;
+      .icon * {
+        fill: $white;
+      }
+    }
+    &:hover, &:active {
+      color: $green;
+      .icon * {
+        fill: $green;
+      }
+    }
+  }
   &.blue {
     &:link, &:visited {
       color: $blue;
@@ -70,6 +84,20 @@
       }
     }
   }
+  &.blue-green {
+    &:link, &:visited {
+      color: $blue;
+      .icon * {
+        fill: $blue;
+      }
+    }
+    &:hover, &:active {
+      color: $green;
+      .icon * {
+        fill: $green;
+      }
+    }
+  }
 }
 
 .active {
@@ -84,6 +112,48 @@
       color: $gray;
       .icon * {
         fill: $gray;
+      }
+    }
+  }
+  .white {
+    &:link, &:visited {
+      color: $green;
+      .icon * {
+        fill: $green;
+      }
+    }
+    &:hover, &:active {
+      color: $green;
+      .icon * {
+        fill: $green;
+      }
+    }
+  }
+  .green {
+    &:link, &:visited {
+      color: $white;
+      .icon * {
+        color: $white;
+      }
+    }
+    &:hover, &:active {
+      color: $white;
+      .icon * {
+        fill: $white;
+      }
+    }
+  }
+  .blue-green {
+    &:link, &:visited {
+      color: $green;
+      .icon * {
+        fill: $green;
+      }
+    }
+    &:hover, &:active {
+      color: $green;
+      .icon * {
+        fill: $green;
       }
     }
   }

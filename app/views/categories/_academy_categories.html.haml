@@ -1,11 +1,11 @@
 // Categories
 
-.main.col-960-1
+.main.col-960-1-1
   - objects.each do |object|
-    .main-box.col-960-1
-      .main-item.col-960-1
+    .main-box.col-960-1-1
+      .main-item.col-960-1-1
         %h3= object.title
       - object.courses.each do |item|
-        .main-item.col-960-2
+        .main-item.col-960-2-1
           = link_to item.title, course_path(item), class: "link medium"
     %hr.separator.medium

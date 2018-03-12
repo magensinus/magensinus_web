@@ -2,48 +2,48 @@
 
 = form_with model: [parent, object], url: category_enrollments_path, class: "main col-960-1", local: true do |f|
   = f.hidden_field :academy_category_id, value: parent.id
-  %fieldset.main-box.col-960-1
-    .main-item.col-960-1
+  %fieldset.main-box.col-960-1-1
+    .main-item.col-960-1-1
       %p= settings.enrollment_description
     .wrapper
       = f.collection_check_boxes :course_ids, courses, :id, :title, include_hidden: false do |tag|
-        .main-item.col-960-2
+        .main-item.col-960-2-1
           .checkbox.underline.left
             = tag.check_box(class: "left")
             = tag.label(class: "left")
     %hr.separator.medium
-    .main-item.col-960-3
+    .main-item.col-960-3-1
       = f.label :name
       = f.text_field :name
-    .main-item.col-960-3
+    .main-item.col-960-3-1
       = f.label :surname
       = f.text_field :surname
-    .main-item.col-960-3
+    .main-item.col-960-3-1
       = f.label :date_of_birth
       = f.date_field :dob, as: :date, value: f.object.try(:strftime, "%m/%d/%Y"), max: Time.zone.today
-    .main-item.col-960-2
+    .main-item.col-960-2-1
       = f.label :email
       = f.text_field :email
-    .main-item.col-960-2
+    .main-item.col-960-2-1
       = f.label :phone
       = f.text_field :phone
     %hr.separator.medium
-    .main-item.col-960-2
+    .main-item.col-960-2-1
       = f.label :address_one
       = f.text_field :address_one
-    .main-item.col-960-2
+    .main-item.col-960-2-1
       = f.label :address_two
       = f.text_field :address_two
-    .main-item.col-960-3
+    .main-item.col-960-3-1
       = f.label :postcode
       = f.text_field :postcode
-    .main-item.col-960-3
+    .main-item.col-960-3-1
       = f.label :city
       = f.text_field :city
-    .main-item.col-960-3
+    .main-item.col-960-3-1
       = f.label :country
       = f.text_field :country
     %hr.separator.medium
     .wrapper
-      .main-item.col-960-2
-        = f.submit "Enviar", class: "button small left"
+      .main-item.col-960-2-1
+        = f.submit "Enviar", class: "button small green left"

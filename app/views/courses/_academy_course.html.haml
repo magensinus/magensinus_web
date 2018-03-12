@@ -1,27 +1,27 @@
 // Academy course
 
-.main.col-960-1
-  .main-box.col-960-1
+.main.col-960-1-1
+  .main-box.col-960-1-1
     - if object.title.presence
-      .main-item.col-960-1
+      .main-item.col-960-1-1
         %h1= object.title
     - if object.description.presence
-      .main-item.col-960-1
+      .main-item.col-960-1-1
         .trix.medium
           = safe_join([object.description.html_safe])
-  .main-box.col-960-1
-    .main-item.col-960-4
+  .main-box.col-960-1-1
+    .main-item.col-960-4-1
       .menu-aside
         .menu-aside-box
           - if object.document_box.presence
             .menu-aside-item
               = link_to object.document_caption, object.document_box.url.to_s, class: "button tiny left wide", target: "_blank"
           .menu-aside-item
-            = link_to "Pré-inscrição", category_enrollments_path(parent), class: "button tiny left wide"
+            = link_to "Pré-inscrição", category_enrollments_path(parent), class: "button tiny green left wide"
     - if object.misc.presence
       .main-item.col-960-4-3
         .misc
           .misc-box
             .misc-item
-              .trix.small
+              .trix.small.misc
                 = safe_join([object.misc.html_safe])

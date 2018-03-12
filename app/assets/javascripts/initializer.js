@@ -3,7 +3,7 @@
 bindEvents = function() {
   $(".off").altaiOff();
 
-  $(".panel-one").setPanel({ trim: 206 });
+  $(".panel-one").setPanel({ trim: 210 });
   $(".panel-two").setPanel({ trim: 138 });
 
   $(".menu-dropdown").altaiToggle({

@@ -5,4 +5,4 @@
     %ul.menu-responsive-box.responsive
       - fetch_primary_urls.each do |object|
         %li{ class: "menu-responsive-item #{active_class(object[:url])} responsive" }
-          = link_to object[:title], object[:url], class: "link nano left responsive"
+          = link_to object[:title], object[:url], class: "link nano white left responsive"

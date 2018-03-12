@@ -6,9 +6,9 @@
       - fetch_primary_urls.each do |object|
         %li{ class: "menu-item #{active_class(object[:url])} responsive-hide" }
           - if object[:id] == 3
-            = link_to object[:title], object[:url], class: "link nano left #{object[:klass]} responsive-hide"
+            = link_to object[:title], object[:url], class: "link nano blue-green left #{object[:klass]} responsive-hide"
             = render "lib/components/menu_dropdown"
           - else
-            = link_to object[:title], object[:url], class: "link nano left"
+            = link_to object[:title], object[:url], class: "link nano blue-green left"
       %li{ class: "menu-item responsive" }
-        = link_to "Menu", "#", class: "off link nano left menu-responsive-trigger responsive"
+        = link_to "Menu", "#", class: "off link nano blue-green left menu-responsive-trigger responsive"

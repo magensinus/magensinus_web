@@ -1,15 +1,15 @@
 // Journal articles
 
-.main.col-960-1
-  .main-box.col-960-1
+.main.col-960-1-1
+  .main-box.col-960-1-1
     - objects.each do |object|
       - if object.title.presence
-        .main-item.col-960-1
+        .main-item.col-960-1-1
           %h1= object.title
       - if object.description.presence
-        .main-item.col-960-1
+        .main-item.col-960-1-1
           .trix.medium
             = safe_join([object.description.html_safe])
       - if object.presence
-        .main-item.col-960-1
-          = link_to t("read_more"), article_path(object), class: "button tiny left"
+        .main-item.col-960-1-1
+          = link_to t("read_more"), article_path(object), class: "button tiny green left"

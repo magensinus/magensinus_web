@@ -7,4 +7,4 @@
         %ul.sitemap-box
           - fetch_primary_urls.each do |object|
             %li{ class: "sitemap-item #{active_class(object[:url])}" }
-              = link_to object[:title], object[:url], class: "link mono tiny"
+              = link_to object[:title], object[:url], class: "link mono green tiny"

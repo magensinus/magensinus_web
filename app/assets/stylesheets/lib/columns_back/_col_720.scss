@@ -1,7 +1,7 @@
-// Column 240
+// Column 720
 
-$width: 240px;
-$class: "col-240";
+$width: 720px;
+$class: "col-720";
 
 @import "lib/columns/col_setup";
 @import "lib/columns/col_math";
@@ -14,16 +14,16 @@ $class: "col-240";
 }
 
 @media #{$small} {
-  $width: 240px;
+  $width: 480px;
   @import "lib/columns/col_math";
 }
 
 @media #{$medium} {
-  $width: 240px;
+  $width: 720px;
   @import "lib/columns/col_math";
 }
 
-@media all and #{$large} {
-  $width: 240px;
+@media #{$large} {
+  $width: 720px;
   @import "lib/columns/col_math";
 }

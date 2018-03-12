@@ -1,14 +1,13 @@
 // Schools
 
 - if objects.presence
-  .main.col-960-1
-    .main-box.col-960-1
-      .main-item.col-960-1
-        %h3 Cursos de Nível IV
+  .main.col-960-1-1
+    .main-box.col-960-1-1
       - objects.each do |object|
-        .main-item.col-960-2
-          %h3.extra-large= object.title if object.title.presence
-          %p= object.description if object.description.presence
+        .main-item.col-960-2-1
+          %h3.extra-large.blue-dark-ft= object.title if object.title.presence
+          .trix.small
+            = safe_join([object.description.html_safe]) if object.description.presence
           %hr.separator.tiny
-          = link_to "visitar", object.url, target: "_blank", class: "button tiny left"
+          = link_to "Visitar", object.url, target: "_blank", class: "button tiny green left"
   %hr.separator.medium

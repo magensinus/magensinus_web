@@ -3,6 +3,7 @@
 $class: "menu-responsive";
 
 .#{$class} {
+  background-color: $blue-darker;
   float: left;
   width: 100%;
   .#{$class}-box {

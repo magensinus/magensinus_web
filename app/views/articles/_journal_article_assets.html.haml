@@ -1,19 +1,19 @@
 // Journal articles
 
-.main.col-960-1
-  .main-box.col-960-1
+.main.col-960-1-1
+  .main-box.col-960-1-1
     - object.assets.order(position: :asc).each do |asset|
       - if asset.text == true
-        .main-item.col-960-1
+        .main-item.col-960-1-1
           .trix
             = safe_join([asset.text_box.html_safe])
       - if asset.image == true
-        .main-item.col-960-1
+        .main-item.col-960-1-1
           .trix
             .image
               = image_tag asset.image_box_url.to_s, class: "left"
       - if asset.video == true
-        .main-item.col-960-1
+        .main-item.col-960-1-1
           .trix
             .video
               %iframe#ytplayer{ allowfullscreen: "", frameborder: "0", height: "531", src: "https://www.youtube.com/embed/#{asset.video_box}", type: "text/html", width: "944" }

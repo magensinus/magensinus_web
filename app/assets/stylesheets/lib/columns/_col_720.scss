@@ -23,7 +23,7 @@ $class: "col-720";
   @import "lib/columns/col_math";
 }
 
-@media #{$large} {
+@media all and #{$large} {
   $width: 720px;
   @import "lib/columns/col_math";
 }

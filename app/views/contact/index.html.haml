@@ -1,15 +1,15 @@
 // Index
 
 .panel-one
-  .main.col-960-2
-    .main-box.col-960-2
-      .main-item.col-960-2
+  .main.col-960-2-1
+    .main-box.col-960-2-1
+      .main-item.col-960-2-1
         %h1= @contact.title
-      .main-item.col-960-2
+      .main-item.col-960-2-1
         .trix.medium
           = safe_join([@contact.description.html_safe])
-    .main-box.col-960-2
-      .main-item.col-960-2
+    .main-box.col-960-2-1
+      .main-item.col-960-2-1
         - if @contact.address_one.presence
           %p.small= @contact.address_one
         - if @contact.address_two.presence
@@ -20,7 +20,7 @@
             = @contact.city
         - if @contact.country.presence
           %p.small= @contact.country
-      .main-item.col-960-2
+      .main-item.col-960-2-1
         - if @contact.phone.presence
           %p.small
             #{t('contact.phone')}:
@@ -33,7 +33,7 @@
           %p.small
             #{t('contact.email')}:
             = @contact.email
-  .main.col-960-2
-    .main-box.col-960-2
-      .main-item.col-960-2
+  .main.col-960-2-1
+    .main-box.col-960-2-1
+      .main-item.col-960-2-1
         #map
