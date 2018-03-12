@@ -13,37 +13,37 @@
             = tag.label(class: "left")
     %hr.separator.medium
     .main-item.col-960-3-1
-      = f.label :name
+      = f.label "Nome"
       = f.text_field :name
     .main-item.col-960-3-1
-      = f.label :surname
+      = f.label "Sobrenome"
       = f.text_field :surname
     .main-item.col-960-3-1
-      = f.label :date_of_birth
+      = f.label "Data de Nascimento"
       = f.date_field :dob, as: :date, value: f.object.try(:strftime, "%m/%d/%Y"), max: Time.zone.today
     .main-item.col-960-2-1
-      = f.label :email
+      = f.label "Email"
       = f.text_field :email
     .main-item.col-960-2-1
-      = f.label :phone
+      = f.label "Telefone"
       = f.text_field :phone
     %hr.separator.medium
     .main-item.col-960-2-1
-      = f.label :address_one
+      = f.label "Morada"
       = f.text_field :address_one
     .main-item.col-960-2-1
-      = f.label :address_two
+      = f.label "Morada"
       = f.text_field :address_two
     .main-item.col-960-3-1
-      = f.label :postcode
+      = f.label "Código Postal"
       = f.text_field :postcode
     .main-item.col-960-3-1
-      = f.label :city
+      = f.label "Cidade"
       = f.text_field :city
     .main-item.col-960-3-1
-      = f.label :country
+      = f.label "País"
       = f.text_field :country
     %hr.separator.medium
     .wrapper
       .main-item.col-960-2-1
-        = f.submit "Enviar", class: "button small green left"
+        = f.submit "Submeter a sua Pré-inscrição", class: "button small green left"
