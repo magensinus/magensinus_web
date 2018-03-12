@@ -9,3 +9,7 @@
       .main-item.col-960-1-1
         .trix.medium
           = safe_join([object.description.html_safe])
+    - if object.body.presence
+      .main-item.col-960-1-1
+        .trix.medium
+          = safe_join([object.body.html_safe])

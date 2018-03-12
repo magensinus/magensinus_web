@@ -4,7 +4,7 @@
   .menu-dropdown
     %ul.menu-dropdown-box
       %li.menu-dropdown-item
-        = link_to t("primary_urls.schools"), schools_path, class: "link nano white left"
+        = link_to t("primary_urls.schools"), schools_path, class: "link nano white-green-darker left"
       - fetch_categories.each do |object|
         %li.menu-dropdown-item
-          = link_to object.title, category_path(object), class: "link nano white left"
+          = link_to object.title, category_path(object), class: "link nano white-green-darker left"

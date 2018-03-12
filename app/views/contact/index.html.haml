@@ -33,6 +33,11 @@
           %p.small
             #{t('contact.email')}:
             = @contact.email
+      - if @contact.body.presence
+        .main-item.col-960-2-1
+          .trix.small
+            = safe_join([@contact.body.html_safe])
+
   .main.col-960-2-1
     .main-box.col-960-2-1
       .main-item.col-960-2-1

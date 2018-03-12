@@ -56,6 +56,20 @@
       }
     }
   }
+  &.white-green-darker {
+    &:link, &:visited {
+      color: $white;
+      .icon * {
+        fill: $white;
+      }
+    }
+    &:hover, &:active {
+      color: $green-darker;
+      .icon * {
+        fill: $green-darker;
+      }
+    }
+  }
   &.blue {
     &:link, &:visited {
       color: $blue;
