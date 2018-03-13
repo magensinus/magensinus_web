@@ -5,4 +5,4 @@
     %ul.badges-box
       - fetch_badges.each do |object|
         %li.badges-item
-          = link_to image_tag(object.thumb_box.url.to_s), object.url, target: "_blank", class: "link"
+          = link_to image_tag(object.thumb_box.url.to_s, class: "left", height: "20"), root_path, class: "link left"

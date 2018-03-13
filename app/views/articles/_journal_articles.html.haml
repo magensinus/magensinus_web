@@ -8,8 +8,9 @@
           %h1= object.title
       - if object.description.presence
         .main-item.col-960-1-1
-          .trix.medium
+          .trix.small
             = safe_join([object.description.html_safe])
       - if object.presence
         .main-item.col-960-1-1
           = link_to t("read_more"), article_path(object), class: "button tiny green left"
+      %hr.separator.medium
