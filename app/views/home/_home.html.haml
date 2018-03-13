@@ -9,5 +9,7 @@
       .main-item.col-960-1-1
         .trix.extra-large.green
           = safe_join([object.description.html_safe])
+      .main-item.col-960-1-1
         - if object.subtitle.presence
-          %p.small.white-ft= object.subtitle
+          %p.small.white-ft.text-right
+            %em= object.subtitle
