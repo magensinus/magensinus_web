@@ -15,7 +15,7 @@
         .menu-aside-box
           - if object.document_box_magensinus.presence
             .menu-aside-item
-              = link_to object.document_caption, object.document_box_magensinus.url.to_s, class: "button tiny left wide", target: "_blank"
+              = link_to "Descarregar PDF", object.document_box_magensinus.url.to_s, class: "button tiny green left wide", target: "_blank"
           .menu-aside-item
             = link_to "Pré-inscrição", category_enrollments_path(parent), class: "button tiny green left wide"
     - if object.misc.presence
