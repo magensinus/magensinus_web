@@ -16,6 +16,7 @@ module Academy
     # ---------
     # Document
     mount_uploader :document_box, Academy::DocumentUploader
+    mount_uploader :document_box_magensinus, Academy::DocumentUploader
 
     # Scoping
     scope :published, -> { where(published: true, magensinus: true).where("published_at <= ?", Time.zone.now).order(position: :asc) }
