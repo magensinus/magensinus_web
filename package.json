@@ -4,6 +4,6 @@
   "dependencies": {
     "altai_off": "^1.0.2",
     "altai_toggle": "^1.0.8",
-    "jquery": "^3.3.1"
+    "jquery": "^3.4.0"
   }
 }
