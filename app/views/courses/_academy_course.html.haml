@@ -19,6 +19,12 @@
                 = link_to object.enrollment_status_label, object.document_box_magensinus.url.to_s, class: "button tiny green left wide", target: "_blank"
               - else
                 = link_to "Descarregar PDF", object.document_box_magensinus.url.to_s, class: "button tiny green left wide", target: "_blank"
+          - if object.document_box.presence
+            .menu-aside-item
+              - if object.enrollment_status_label.presence
+                = link_to object.enrollment_status_label, object.document_box.url.to_s, class: "button tiny green left wide", target: "_blank"
+              - else
+                = link_to "Descarregar PDF", object.document_box.url.to_s, class: "button tiny green left wide", target: "_blank"
           - if object.enrollment_status == true
             .menu-aside-item
               = link_to "Pré-inscrição", category_enrollments_path(parent), class: "button tiny green left wide"
