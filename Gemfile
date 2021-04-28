@@ -41,7 +41,7 @@ gem "haml-rails", "~> 1.0"
 gem "carrierwave", "~> 1.2"
 
 # Manipulate images with minimal use of memory via ImageMagick / GraphicsMagick
-gem "mini_magick", "~> 4.8"
+gem "mini_magick", "~> 4.9"
 
 # Simple, Heroku-friendly Rails app configuration using ENV and a single YAML file
 gem "figaro", "~> 1.1"
