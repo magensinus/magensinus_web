@@ -108,3 +108,42 @@
     }
   }
 }
+
+@media #{$tiny} {
+  .trix {
+    &.extra-large {
+      p,
+      div {
+        font-size: 24px;
+        line-height: 32px;
+      }
+    }
+  }
+}
+
+@media #{$small} {
+  .trix {
+    &.extra-large {
+      p,
+      div {
+        font-size: 24px;
+        line-height: 32px;
+      }
+    }
+  }
+}
+
+@media #{$medium} {
+  .trix {
+    &.extra-large {
+      p,
+      div {
+        font-size: 24px;
+        line-height: 32px;
+      }
+    }
+  }
+}
+
+@media #{$large} {
+}

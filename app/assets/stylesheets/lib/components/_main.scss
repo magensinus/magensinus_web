@@ -9,6 +9,12 @@ $class: "main";
     .#{$class}-item {
       float: left;
       padding: 8px;
+      .link {
+        &.courses {
+          min-height: 72px;
+          width: 100%;
+        }
+      }
       img {
         width: 100%;
       }
