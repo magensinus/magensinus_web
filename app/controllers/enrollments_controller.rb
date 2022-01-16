@@ -69,6 +69,8 @@ class EnrollmentsController < ApplicationController
         secondary_surname:  @academy_enrollment.secondary_surname,
         secondary_email:    @academy_enrollment.secondary_email,
         secondary_phone:    @academy_enrollment.secondary_phone,
+        education:          @academy_enrollment.education,
+        employment_status:  @academy_enrollment.employment_status,
         courses:            @courses
       },
       tag: "enrollment"
@@ -94,6 +96,8 @@ class EnrollmentsController < ApplicationController
       :secondary_email,
       :secondary_phone,
       :accept_terms,
+      :education,
+      :employment_status,
       course_ids: []
     )
   end

@@ -71,6 +71,25 @@ form {
       }
     }
   }
+
+  select {
+    @include border-corner(4px);
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: $white;
+    border: 0;
+    color: $gray;
+    font-family: $sans;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0;
+    padding: 15px 16px 14px;
+    width: 100%;
+    &:focus { outline: none; }
+  }
+
+
+
   button {
     @include border-corner(4px);
     font-family: $sans;

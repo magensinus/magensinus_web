@@ -44,6 +44,15 @@
       = f.label "País"
       = f.text_field :country
     %hr.separator.medium
+    .main-item.col-960-3-1
+      = f.label "Educação"
+      // = f.text_field :education
+      = f.select(:education, [["Secundário", "secundário"], ["Ensino Superior", "ensino superior"]])
+    .main-item.col-960-3-1
+      = f.label "Emprego"
+      // = f.text_field :employment_status
+      = f.select(:employment_status, [["Empregado", "empregado"], ["Desempregado", "desempregado"]])
+    %hr.separator.medium
     .wrapper
       .main-item.col-960-2-1
         = f.submit "Submeter a sua Pré-inscrição", class: "button small green left"
