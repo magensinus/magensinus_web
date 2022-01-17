@@ -45,11 +45,11 @@
       = f.text_field :country
     %hr.separator.medium
     .main-item.col-960-3-1
-      = f.label "Educação"
+      = f.label "Nível de Escolaridade"
       // = f.text_field :education
-      = f.select(:education, [["Secundário", "secundário"], ["Ensino Superior", "ensino superior"]])
+      = f.select(:education, [["Ensino Básico", "ensino básico"], ["Ensino Secundário", "ensino secundário"], ["Ensino Superior", "ensino superior"]])
     .main-item.col-960-3-1
-      = f.label "Emprego"
+      = f.label "Situação face ao Emprego"
       // = f.text_field :employment_status
       = f.select(:employment_status, [["Empregado", "empregado"], ["Desempregado", "desempregado"]])
     %hr.separator.medium
